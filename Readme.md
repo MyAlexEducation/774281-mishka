@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Цыганчук](https://up.htmlacademy.ru/adaptive/15/user/774281).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев] (https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
