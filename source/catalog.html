@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мишка каталог</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="http://placehold.it/150x100" alt="Логотип">
+      </a>
+    </div>
+    <nav class="navigation">
+      <button type="button" class="navigation__switch"><span class="visually-hidden">Открыть/закрыть меню</span>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="catalog.html" class="navigation__link">Каталог товаров</a></li>
+        <li class="navigation__item"><a href="form.html" class="navigation__link">Вязание на заказ</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link navigation__link--search">Поиск по сайту</a>
+        </li>
+        <li class="navigation__item"><a href="#" class="navigation__link navigation__link--cart">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="heading heading--inner-page">
+    <div class="heading__container heading__container--inner-page">
+      <h1 class="heading__text">
+        Каталог товаров
+      </h1>
+    </div>
+  </div>
+  <section class="catalog">
+    <div class="catalog__container">
+      <h2 class="visually-hidden">Наши товары:</h2>
+      <ul class="product-list">
+        <li class="product-item">
+          <article class="product">
+            <a href="product-description.html" class="product__link">
+              <img src="http://placehold.it/150x100" class="product__photo" alt="">
+            </a>
+            <div class="product-info">
+              <a href="product-description.html" class="product__link">
+                <h1 class="product__heading"></h1>
+              </a>
+              <p class="product__info"></p>
+              <span class="product__price"></span>
+              <a href="#" product__cart><span class="visually-hidden">В корзину:</span></a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="video">
+    <div class="video__container">
+      <h2 class="video__heading"></h2>
+      <video video__content>
+        <source src="">
+        <source src="">
+        <source src="">
+      </video>
+      <div class="video__controls">
+        <button class="video__controls__play"></button>
+      </div>
+      <p class="video__info"></p>
+      <a href="order.html" class="order-link button"></a>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__container">
+    <section class="social-navigation">
+      <h2 class="visually-hidden">Мы в соцсетях:</h2>
+      <ul class="social-navigation__list">
+        <li><a href="#" class="social-navigation__item social-navigation__item--instagram"><span
+          class="visually-hidden">instagram</span></a></li>
+        <li><a href="#" class="social-navigation__item social-navigation__item--facebook"><span class="visually-hidden">facebook</span></a>
+        </li>
+        <li><a href="#" class="social-navigation__item social-navigation__item--twitter"><span class="visually-hidden">twitter</span></a>
+        </li>
+      </ul>
+    </section>
+    <section class="copyright">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+        <h2 class="copyright__heading">Разработано</h2>
+        <img src="http://placehold.it/150x100" class="copyright__logo" alt="htmlacademy">
+      </a>
+    </section>
+  </div>
+</footer>
+<section class="modal--cart">
+  <h2 class="modal--cart__heading">Добавить в корзину</h2>
+  <form method="post" action="https://echo.htmlacademy.ru" class="modal--cart__form">
+    <fieldset class="modal--cart__form__size">
+      <legend class="modal--cart__form__size__heading">Выберите размер:</legend>
+      <ul class="modal--cart__form__size__list">
+        <li class="modal--cart__form__size__element">
+          <input type="radio" class="modal--cart__form__size__element__checkbox"
+                 id="modal--cart__form__size__element__s" name="size" value="s" checked>
+          <label for="modal--cart__form__size__element__s" class="modal--cart__form__size__element__label">S</label>
+        </li>
+        <li class="modal--cart__form__size__element">
+          <input type="radio" class="modal--cart__form__size__element__checkbox"
+                 id="modal--cart__form__size__element__m" name="size" value="m">
+          <label for="modal--cart__form__size__element__m" class="modal--cart__form__size__element__label">M</label>
+        </li>
+        <li class="modal--cart__form__size__element">
+          <input type="radio" class="modal--cart__form__size__element__checkbox"
+                 id="modal--cart__form__size__element__l" name="size" value="l">
+          <label for="modal--cart__form__size__element__l" class="modal--cart__form__size__element__label">L</label>
+        </li>
+      </ul>
+    </fieldset>
+    <button type="submit" class="modal-add-in-cart__form__submit">Добавить</button>
+  </form>
+</section>
+</body>
+</html>
