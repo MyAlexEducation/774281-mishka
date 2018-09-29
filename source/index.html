@@ -36,30 +36,24 @@
     </div>
   </div>
   <section class="product-navigation">
-    <div class="product-navigation__container">
-      <h2 class="visually-hidden">Мы предлагаем:</h2>
-      <ul class="product-navigation__list">
-        <li class="product-navigation__item">
-          <a href="#" class="product-navigation__link product-navigation__link--light-blue">
-            <div class="product-navigation__link__container product-navigation__link__container--interior-items">
-              Предметы интерьера
-            </div>
-          </a>
-        </li>
-        <li class="product-navigation__item">
-          <a href="#" class="product-navigation__link product-navigation__link--dark-blue">
-            <div class="product-navigation__link__container product-navigation__link__container--kids-toys">
-              Детские игрушки
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <h2 class="visually-hidden">Мы предлагаем:</h2>
+    <ul class="product-navigation__list">
+      <li class="product-navigation__item product-navigation__item--light-blue">
+        <div class="product-navigation__item__container">
+          <a href="#" class="product-navigation__link  product-navigation__link--interior">Предметы интерьера</a>
+        </div>
+      </li>
+      <li class="product-navigation__item product-navigation__item--dark-blue">
+        <div class="product-navigation__link__container">
+          <a href="#" class="product-navigation__link product-navigation__link--kids-toys">Детские игрушки</a>
+        </div>
+      </li>
+    </ul>
   </section>
   <section class="promotion-product">
     <div class="promotion-product__container">
       <h2 class="promotion-product__heading">Вязаные корзинки</h2>
-      <p class="promotion-product__event">Товар недели</p>
+      <span class="promotion-product__event">Товар недели</span>
       <p class="promotion-product__description">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
       </p>
@@ -110,13 +104,13 @@
       <h2 class="reviews__heading">Отзывы</h2>
       <ul class="reviews__list">
         <li class="reviews__item">
-          <p class="reviews__item__text">
+          <p class="reviews__text">
             Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
             как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
             и мои фотографии сразу стали более стильными, а также набирают больше лайков!
           </p>
-          <p class="reviews__author__name">Анастасия Красильникова</p>
-          <a href="mailto:@misssssiskras" class="reviews__item__nickname">@misssssiskras</a>
+          <p class="reviews__author">Анастасия Красильникова</p>
+          <a href="#" class="reviews__nickname">@misssssiskras</a>
         </li>
       </ul>
       <p class="reviews__toggles">
@@ -141,7 +135,7 @@
       </div>
       <img class="contacts__map" src="http://placehold.it/150x100"
            alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-      <a href="contacts.html" class="contacts_letter button">Напишите нам</a>
+      <a href="contacts.html" class="contacts__letter button">Напишите нам</a>
     </div>
   </section>
 </main>
@@ -150,11 +144,14 @@
     <section class="social-navigation">
       <h2 class="visually-hidden">Мы в соцсетях:</h2>
       <ul class="social-navigation__list">
-        <li><a href="#" class="social-navigation__item social-navigation__item--instagram"><span
-          class="visually-hidden">instagram</span></a></li>
-        <li><a href="#" class="social-navigation__item social-navigation__item--facebook"><span class="visually-hidden">facebook</span></a>
+        <li><a href="#" class="social-navigation__item social-navigation__item--instagram">
+          <span class="visually-hidden">instagram</span></a>
         </li>
-        <li><a href="#" class="social-navigation__item social-navigation__item--twitter"><span class="visually-hidden">twitter</span></a>
+        <li><a href="#" class="social-navigation__item social-navigation__item--facebook">
+          <span class="visually-hidden">facebook</span></a>
+        </li>
+        <li><a href="#" class="social-navigation__item social-navigation__item--twitter">
+          <span class="visually-hidden">twitter</span></a>
         </li>
       </ul>
     </section>
@@ -170,22 +167,22 @@
   <h2 class="modal-cart__heading">Добавить в корзину</h2>
   <form method="post" action="https://echo.htmlacademy.ru" class="modal-cart__form">
     <fieldset class="modal-cart__form__size">
-      <legend class="modal-cart__form__size__heading">Выберите размер:</legend>
-      <ul class="modal-cart__form__size__list">
-        <li class="modal-cart__form__size__element">
-          <input type="radio" class="modal-cart__form__size__element__checkbox"
-                 id="modal-cart__form__size__element__s" name="size" value="s" checked>
-          <label for="modal-cart__form__size__element__s" class="modal-cart__form__size__element__label">S</label>
+      <legend class="modal-cart__form__heading">Выберите размер:</legend>
+      <ul class="modal-cart__form__list">
+        <li class="modal-cart__form__element">
+          <input type="radio" class="modal-cart__radio"
+                 id="modal-cart-size-s" name="size" value="s" checked>
+          <label for="modal-cart-size-s" class="modal-cart__label">S</label>
         </li>
-        <li class="modal-cart__form__size__element">
-          <input type="radio" class="modal-cart__form__size__element__checkbox"
-                 id="modal-cart__form__size__element__m" name="size" value="m">
-          <label for="modal-cart__form__size__element__m" class="modal-cart__form__size__element__label">M</label>
+        <li class="modal-cart__form__element">
+          <input type="radio" class="modal-cart__radio"
+                 id="modal-cart-size-m" name="size" value="m">
+          <label for="modal-cart-size-m" class="modal-cart__label">M</label>
         </li>
-        <li class="modal-cart__form__size__element">
-          <input type="radio" class="modal-cart__form__size__element__checkbox"
-                 id="modal-cart__form__size__element__l" name="size" value="l">
-          <label for="modal-cart__form__size__element__l" class="modal-cart__form__size__element__label">L</label>
+        <li class="modal-cart__form__element">
+          <input type="radio" class="modal-cart__radio"
+                 id="modal-cart-size-l" name="size" value="l">
+          <label for="modal-cart-size-l" class="modal-cart__label">L</label>
         </li>
       </ul>
     </fieldset>

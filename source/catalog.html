@@ -27,8 +27,8 @@
   </div>
 </header>
 <main>
-  <div class="heading heading--inner-page">
-    <div class="heading__container heading__container--inner-page">
+  <div class="heading heading--gray">
+    <div class="heading__container">
       <h1 class="heading__text">
         Каталог товаров
       </h1>
@@ -45,11 +45,41 @@
             </a>
             <div class="product-info">
               <a href="product-description.html" class="product__link">
-                <h1 class="product__heading"></h1>
+                <h1 class="product__heading">Зайчик-попрыгайчик</h1>
               </a>
-              <p class="product__info"></p>
-              <span class="product__price"></span>
-              <a href="#" product__cart><span class="visually-hidden">В корзину:</span></a>
+              <p class="product__info">Рост 30 см, вес 200 г</p>
+              <span class="product__price">1 200 руб.</span>
+              <a href="#" class="product__cart"><span class="visually-hidden">В корзину:</span></a>
+            </div>
+          </article>
+        </li>
+        <li class="product-item">
+          <article class="product">
+            <a href="product-description.html" class="product__link">
+              <img src="http://placehold.it/150x100" class="product__photo" alt="">
+            </a>
+            <div class="product-info">
+              <a href="product-description.html" class="product__link">
+                <h1 class="product__heading">Корзинка для белья</h1>
+              </a>
+              <p class="product__info">Диаметр 15 см, высота 10 см</p>
+              <span class="product__price">690 руб.</span>
+              <a href="#" class="product__cart"><span class="visually-hidden">В корзину:</span></a>
+            </div>
+          </article>
+        </li>
+        <li class="product-item">
+          <article class="product">
+            <a href="product-description.html" class="product__link">
+              <img src="http://placehold.it/150x100" class="product__photo" alt="">
+            </a>
+            <div class="product-info">
+              <a href="product-description.html" class="product__link">
+                <h1 class="product__heading">Большая корзинка для игрушек</h1>
+              </a>
+              <p class="product__info">Диаметр 30 см, высота 30 см</p>
+              <span class="product__price">1 500 руб.</span>
+              <a href="#" class="product__cart"><span class="visually-hidden">В корзину:</span></a>
             </div>
           </article>
         </li>
@@ -58,17 +88,15 @@
   </section>
   <section class="video">
     <div class="video__container">
-      <h2 class="video__heading"></h2>
-      <video video__content>
-        <source src="">
-        <source src="">
-        <source src="">
-      </video>
+      <h2 class="video__heading">Процесс производства</h2>
+      <img src="http://placehold.it/150x100" alt="Заставка видео" class="video__content">
       <div class="video__controls">
         <button class="video__controls__play"></button>
       </div>
-      <p class="video__info"></p>
-      <a href="order.html" class="order-link button"></a>
+      <p class="video__info">
+        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+      </p>
+      <a href="order.html" class="video__link button">Сделать заказ</a>
     </div>
   </section>
 </main>
@@ -97,22 +125,22 @@
   <h2 class="modal-cart__heading">Добавить в корзину</h2>
   <form method="post" action="https://echo.htmlacademy.ru" class="modal-cart__form">
     <fieldset class="modal-cart__form__size">
-      <legend class="modal-cart__form__size__heading">Выберите размер:</legend>
-      <ul class="modal-cart__form__size__list">
-        <li class="modal-cart__form__size__element">
-          <input type="radio" class="modal-cart__form__size__element__checkbox"
-                 id="modal-cart__form__size__element__s" name="size" value="s" checked>
-          <label for="modal-cart__form__size__element__s" class="modal-cart__form__size__element__label">S</label>
+      <legend class="modal-cart__form__heading">Выберите размер:</legend>
+      <ul class="modal-cart__form__list">
+        <li class="modal-cart__form__element">
+          <input type="radio" class="modal-cart__radio"
+                 id="modal-cart-size-s" name="size" value="s" checked>
+          <label for="modal-cart-size-s" class="modal-cart__label">S</label>
         </li>
-        <li class="modal-cart__form__size__element">
-          <input type="radio" class="modal-cart__form__size__element__checkbox"
-                 id="modal-cart__form__size__element__m" name="size" value="m">
-          <label for="modal-cart__form__size__element__m" class="modal-cart__form__size__element__label">M</label>
+        <li class="modal-cart__form__element">
+          <input type="radio" class="modal-cart__radio"
+                 id="modal-cart-size-m" name="size" value="m">
+          <label for="modal-cart-size-m" class="modal-cart__label">M</label>
         </li>
-        <li class="modal-cart__form__size__element">
-          <input type="radio" class="modal-cart__form__size__element__checkbox"
-                 id="modal-cart__form__size__element__l" name="size" value="l">
-          <label for="modal-cart__form__size__element__l" class="modal-cart__form__size__element__label">L</label>
+        <li class="modal-cart__form__element">
+          <input type="radio" class="modal-cart__radio"
+                 id="modal-cart-size-l" name="size" value="l">
+          <label for="modal-cart-size-l" class="modal-cart__label">L</label>
         </li>
       </ul>
     </fieldset>
