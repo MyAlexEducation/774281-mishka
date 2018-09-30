@@ -16,11 +16,17 @@
       <button type="button" class="navigation__switch"><span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="catalog.html" class="navigation__link">Каталог товаров</a></li>
-        <li class="navigation__item"><a href="form.html" class="navigation__link">Вязание на заказ</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link navigation__link--search">Поиск по сайту</a>
+        <li class="navigation__item">
+          <a href="catalog.html" class="navigation__link">Каталог товаров</a>
         </li>
-        <li class="navigation__item"><a href="#" class="navigation__link navigation__link--cart">Корзина: пока пуста</a>
+        <li class="navigation__item">
+          <a href="form.html" class="navigation__link">Вязание на заказ</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link navigation__link--search">Поиск по сайту</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link navigation__link--cart">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -39,14 +45,10 @@
     <h2 class="visually-hidden">Мы предлагаем:</h2>
     <ul class="product-navigation__list">
       <li class="product-navigation__item product-navigation__item--light-blue">
-        <div class="product-navigation__item__container">
-          <a href="#" class="product-navigation__link  product-navigation__link--interior">Предметы интерьера</a>
-        </div>
+        <a href="#" class="product-navigation__link  product-navigation__link--interior">Предметы интерьера</a>
       </li>
       <li class="product-navigation__item product-navigation__item--dark-blue">
-        <div class="product-navigation__link__container">
-          <a href="#" class="product-navigation__link product-navigation__link--kids-toys">Детские игрушки</a>
-        </div>
+        <a href="#" class="product-navigation__link product-navigation__link--kids-toys">Детские игрушки</a>
       </li>
     </ul>
   </section>
@@ -133,7 +135,8 @@
         <span class="contacts__name">адрес:</span>
         <a class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</a>
       </div>
-      <img class="contacts__map" src="http://placehold.it/150x100" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+      <img class="contacts__map" src="http://placehold.it/150x100"
+           alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
       <a href="contacts.html" class="contacts__letter button">Напишите нам</a>
     </div>
   </section>
@@ -164,25 +167,25 @@
 </footer>
 <section class="modal-cart">
   <h2 class="modal-cart__heading">Добавить в корзину</h2>
-  <form method="post" action="https://echo.htmlacademy.ru" class="modal-cart__form">
-    <fieldset class="modal-cart__form__size">
-      <legend class="modal-cart__form__heading">Выберите размер:</legend>
-      <ul class="modal-cart__form__list">
-        <li class="modal-cart__form__element">
-          <input type="radio" class="modal-cart__radio" id="modal-cart-size-s" name="size" value="s" checked>
-          <label for="modal-cart-size-s" class="modal-cart__label">S</label>
+  <form method="post" action="https://echo.htmlacademy.ru" class="form-size modal-cart__form-size">
+    <fieldset class="form-size__fieldset">
+      <legend class="form-size__legend">Выберите размер:</legend>
+      <ul class="form-size__list">
+        <li class="form-size__list__item">
+          <input type="radio" class="form-size__radio" id="form-size-s" name="size" value="s" checked>
+          <label for="form-size-s" class="form-size__label">S</label>
         </li>
-        <li class="modal-cart__form__element">
-          <input type="radio" class="modal-cart__radio" id="modal-cart-size-m" name="size" value="m">
-          <label for="modal-cart-size-m" class="modal-cart__label">M</label>
+        <li class="form-size__list__item">
+          <input type="radio" class="form-size__radio" id="form-size-m" name="size" value="m">
+          <label for="form-size-m" class="form-size__label">M</label>
         </li>
-        <li class="modal-cart__form__element">
-          <input type="radio" class="modal-cart__radio" id="modal-cart-size-l" name="size" value="l">
-          <label for="modal-cart-size-l" class="modal-cart__label">L</label>
+        <li class="form-size__list__item">
+          <input type="radio" class="form-size__radio" id="form-size-l" name="size" value="l">
+          <label for="form-size-l" class="form-size__label">L</label>
         </li>
       </ul>
     </fieldset>
-    <button type="submit" class="modal-cart__form__submit">Добавить</button>
+    <button type="submit" class="form-size__submit">Добавить</button>
   </form>
 </section>
 </body>

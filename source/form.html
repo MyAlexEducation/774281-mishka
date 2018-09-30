@@ -16,10 +16,18 @@
       <button type="button" class="navigation__switch"><span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="catalog.html" class="navigation__link">Каталог товаров</a></li>
-        <li class="navigation__item"><a href="form.html" class="navigation__link">Вязание на заказ</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link navigation__link--search">Поиск по сайту</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link navigation__link--cart">Корзина: пока пуста</a></li>
+        <li class="navigation__item">
+          <a href="catalog.html" class="navigation__link">Каталог товаров</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Вязание на заказ</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link navigation__link--search">Поиск по сайту</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link navigation__link--cart">Корзина: пока пуста</a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -39,42 +47,42 @@
       <form method="post" action="https://echo.htmlacademy.ru" class="order__form">
         <fieldset class="order__fieldset">
           <legend class="order__legend">Тип</legend>
-          <input type="radio" class="order__input--no-display" id="order-form-type-accessory" name="type" value="1">
+          <input type="radio" class="order__input order__input--no-display" id="order-form-type-accessory" name="type" value="1">
           <label for="order-form-type-accessory" class="order__label order__label--radio">Аксессуар для интерьера</label>
-          <input type="radio" class="order__input--no-display" id="order-form-type-toy" name="type" value="2">
+          <input type="radio" class="order__input order__input--no-display" id="order-form-type-toy" name="type" value="2">
           <label for="order-form-type-toy" class="order__label order__label--radio">Детская игрушка</label>
         </fieldset>
         <fieldset class="order__fieldset">
           <legend class="order__legend">Цвет</legend>
-          <input type="checkbox" class="order__input--no-display" id="order-form-color-white" name="white">
+          <input type="checkbox" class="order__input order__input--no-display" id="order-form-color-white" name="white">
           <label for="order-form-color-white" class="order__label order__label--checkbox">Белый</label>
-          <input type="checkbox" class="order__input--no-display" id="order-form-color-gray" name="gray">
+          <input type="checkbox" class="order__input order__input--no-display" id="order-form-color-gray" name="gray">
           <label for="order-form-color-gray" class="order__label order__label--checkbox">Серый</label>
-          <input type="checkbox" class="order__input--no-display" id="order-form-color-tiffany" name="tiffany">
+          <input type="checkbox" class="order__input order__input--no-display" id="order-form-color-tiffany" name="tiffany">
           <label for="order-form-color-tiffany" class="order__label order__label--checkbox">«Тиффани»</label>
-          <input type="checkbox" class="order__input--no-display" id="order-form-color-black" name="black">
+          <input type="checkbox" class="order__input order__input--no-display" id="order-form-color-black" name="black">
           <label for="order-form-color-black" class="order__label order__label--checkbox">Черный</label>
-          <input type="checkbox" class="order__input--no-display" id="order-form-color-pink" name="pink">
+          <input type="checkbox" class="order__input order__input--no-display" id="order-form-color-pink" name="pink">
           <label for="order-form-color-pink" class="order__label order__label--checkbox">Розовый</label>
-          <input type="checkbox" class="order__input--no-display" id="order-form-color-orange" name="orange">
+          <input type="checkbox" class="order__input order__input--no-display" id="order-form-color-orange" name="orange">
           <label for="order-form-color-orange" class="order__label order__label--checkbox">Оранжевый</label>
         </fieldset>
         <fieldset class="order__fieldset">
           <legend class="order__legend">ФИО</legend>
           <label for="order-form-identity-name" class="order__label">Имя:</label>
-          <input type="text" class="order__input--text" id="order-form-identity-name" name="name" placeholder="Введите ваше имя*">
+          <input type="text" class="order__input order__input--text" id="order-form-identity-name" name="name" placeholder="Введите ваше имя*">
           <label for="order-form-identity-surname" class="order__label">Фамилия:</label>
-          <input type="text" class="order__input--text" id="order-form-identity-surname" name="surname" placeholder="Укажите фамилию*">
+          <input type="text" class="order__input order__input--text" id="order-form-identity-surname" name="surname" placeholder="Укажите фамилию*">
           <label for="order-form-identity-patronymic" class="order__label">Отчество:</label>
-          <input type="text" class="order__input--text" id="order-form-identity-patronymic" name="patronymic" placeholder="Отчество, если желаете">
+          <input type="text" class="order__input order__input--text" id="order-form-identity-patronymic" name="patronymic" placeholder="Отчество, если желаете">
         </fieldset>
         <fieldset class="order__fieldset">
           <legend class="order__legend">Тел</legend>
-          <input type="tel" class="order__input--tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <input type="tel" class="order__input order__input--tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </fieldset>
         <fieldset class="order__fieldset">
           <legend class="order__legend">E-mail</legend>
-          <input type="email" class="order__input--email" placeholder="Ваш Email*">
+          <input type="email" class="order__input order__input--email" placeholder="Ваш Email*">
         </fieldset>
         <fieldset class="order__fieldset">
           <legend class="order__legend">Доп</legend>
