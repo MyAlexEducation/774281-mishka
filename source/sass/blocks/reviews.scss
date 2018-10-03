@@ -1,0 +1,71 @@
+.reviews {
+  &__container {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__text {
+    color: rgba(68, 68, 68, 1);
+  }
+
+  &__author {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  &__nickname {
+    font-size: 17px;
+    color: rgba(68, 68, 68, 1);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: rgba(70, 193, 174, 1);
+    }
+
+    &:active {
+      color: rgba(70, 193, 174, 0.3);
+    }
+  }
+
+  &__button {
+    width: 130px;
+    height: 52px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--before {
+      background-image: url("../img/icon-left-arrow.svg");
+    }
+
+    &--after {
+      background-image: url("../img/icon-right-arrow.svg");
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.heading {
+  background-color: rgba(249, 249, 249, 1);
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &__container {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+.heading--gray {
+  background-color: rgba(241, 241, 241, 1);
+  background-image: none;
+}

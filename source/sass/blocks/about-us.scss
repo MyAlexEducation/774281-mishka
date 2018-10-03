@@ -1,0 +1,28 @@
+.about-us {
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+
+  &__container {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+}

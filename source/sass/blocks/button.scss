@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: rgba(68, 68, 68, 1);
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid rgba(68, 68, 68, 1);
+
+  &--big-font {
+    font-size: 18px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: rgba(68, 68, 68, 1);
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: rgba(68, 68, 68, 1);
+  }
+}

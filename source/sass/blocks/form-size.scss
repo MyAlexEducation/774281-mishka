@@ -1,0 +1,39 @@
+.form-size {
+  &__legend {
+    color: rgba(68, 68, 68, 1);
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__label {
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(68, 68, 68, 1);
+  }
+
+  &__submit {
+    outline: none;
+    border: none;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
+    background-color: rgba(99, 209, 187, 1);
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

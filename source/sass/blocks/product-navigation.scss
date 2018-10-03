@@ -1,0 +1,43 @@
+.product-navigation {
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: bold;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__link--light-blue {
+    background-color: rgba(99, 209, 187, 1);
+
+    &:hover,
+    &:focus {
+      background-color: rgba(89, 213, 188, 1);
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+      background-color: rgba(89, 213, 188, 1);
+    }
+  }
+
+  &__link--dark-blue {
+    background-color: rgba(86, 195, 178, 1);
+
+    &:hover,
+    &:focus {
+      background-color: rgba(70, 193, 174, 1);
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+      background-color: rgba(70, 193, 174, 1);
+    }
+  }
+}

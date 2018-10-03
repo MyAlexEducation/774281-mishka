@@ -1,0 +1,47 @@
+.promotion-product {
+  &__container {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  &__event {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    color: rgba(99, 209, 187, 1);
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(68, 68, 68, 1);
+  }
+
+  &__properties {
+    border-collapse: collapse;
+
+    &__cell {
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: normal;
+      text-align: left;
+      color: rgba(68, 68, 68, 1);
+      border-bottom: 1px solid rgba(236, 236, 236, 1);
+    }
+  }
+
+  &__price {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(68, 68, 68, 1);
+  }
+}

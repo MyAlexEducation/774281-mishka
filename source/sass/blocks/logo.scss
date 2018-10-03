@@ -1,0 +1,13 @@
+.logo {
+  width: 86px;
+  margin: 0 auto;
+
+  &__link:not(&__link--current):hover,
+  &__link:not(&__link--current):focus {
+    opacity: 0.6;
+  }
+
+  &__link:not(&__link--current):active {
+    opacity: 0.3;
+  }
+}

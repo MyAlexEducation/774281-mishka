@@ -1,0 +1,13 @@
+.social-navigation {
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__icon {
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
