@@ -1,0 +1,87 @@
+.order {
+  &__container {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__promotion {
+    font-size: 13px;
+    line-height: 24px;
+    color: rgba(68, 68, 68, 1);
+  }
+
+  &__fieldset {
+    border: none;
+    border-top: 1px solid rgba(98, 209, 186, 1);
+  }
+
+  &__legend {
+    font-size: 17px;
+    line-height: 16px;
+    color: rgba(99, 209, 187, 1);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    font-size: 19px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 1);
+
+    outline: none;
+    border: none;
+    border-bottom: 2px solid $black;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: 2px solid rgba(98, 209, 186, 1);
+    }
+
+    &::placeholder {
+      font-size: 17px;
+      line-height: 18px;
+      color: rgba(68, 68, 68, 0.3);
+    }
+
+    &--tel::placeholder {
+      font-size: 19px;
+      text-transform: uppercase;
+    }
+
+    &--no-display {
+      display: none;
+    }
+  }
+
+  &__textarea {
+    font-size: 19px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 1);
+    outline: none;
+    border: 2px solid rgba(68, 68, 68, 1);
+
+    &::placeholder {
+      color: rgba(68, 68, 68, 0.3);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 2px solid rgba(98, 209, 186, 1);
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+  }
+
+  &__prompt {
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(68, 68, 68, 1);
+  }
+}

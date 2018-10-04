@@ -5,8 +5,10 @@
   line-height: 20px;
   font-weight: bold;
   color: rgba(68, 68, 68, 1);
+  background-color: transparent;
   text-transform: uppercase;
   text-align: center;
+  outline: none;
   border: 2px solid rgba(68, 68, 68, 1);
 
   &--big-font {
