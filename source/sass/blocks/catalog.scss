@@ -1,0 +1,12 @@
+.catalog {
+  &__container {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}

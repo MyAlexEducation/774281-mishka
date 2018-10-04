@@ -1,0 +1,23 @@
+.video {
+  &__container {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__controls {
+    position: relative;
+  }
+
+  &__button {
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__info {
+    font-size: 13px;
+    line-height: 24px;
+    color: rgba(68, 68, 68, 1);
+  }
+}
