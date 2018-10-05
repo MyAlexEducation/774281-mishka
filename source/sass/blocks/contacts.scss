@@ -2,39 +2,39 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: auto 6px;
+}
 
-  &__container {
-    width: 260px;
-    margin: 0 auto;
-  }
+.contacts__container {
+  width: 260px;
+  margin: 0 auto;
+}
 
-  &__heading {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: bold;
-  }
+.contacts__heading {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
 
-  &__info {
-    color: rgba(68, 68, 68, 1);
-  }
+.contacts__info {
+  color: $font-gray;
+}
 
-  &__value {
-    color: rgba(68, 68, 68, 1);
+.contacts__value {
+  color: $font-gray;
 
-    &--mail {
-      text-decoration: none;
-      border-bottom: 1px solid rgba(98, 209, 186, 1);
+  &--mail {
+    text-decoration: none;
+    border-bottom: 1px solid $aquamarine;
 
-      &:hover,
-      &:focus {
-        color: rgba(70, 193, 174, 1);
-        border-bottom: 1px solid rgba(70, 193, 174, 1);
-      }
+    &:hover,
+    &:focus {
+      color: $aquamarine-dark-interactive;
+      border-bottom: 1px solid $aquamarine-dark-interactive;
+    }
 
-      &:active {
-        color: rgba(70, 193, 174, 0.3);
-        border-bottom: 1px solid rgba(70, 193, 174, 0.1);
-      }
+    &:active {
+      color: rgba($aquamarine-dark-interactive, 0.3);
+      border-bottom: 1px solid rgba($aquamarine-dark-interactive, 0.1);
     }
   }
 }

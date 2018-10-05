@@ -1,43 +1,39 @@
-.form-size {
-  &__legend {
-    color: rgba(68, 68, 68, 1);
+.form-size__legend {
+  color: $font-gray;
+}
+
+.form-size__fieldset {
+  border: none;
+}
+
+.form-size__list {
+  @include list-style-reset;
+}
+
+.form-size__label {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $font-gray;
+}
+
+.form-size__submit {
+  outline: none;
+  border: none;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $aquamarine;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
 
-  &__fieldset {
-    border: none;
-  }
-
-  &__list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  &__label {
-    font-size: 17px;
-    line-height: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: rgba(68, 68, 68, 1);
-  }
-
-  &__submit {
-    outline: none;
-    border: none;
-    font-size: 17px;
-    line-height: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $white;
-    background-color: rgba(99, 209, 187, 1);
-
-    &:hover,
-    &:focus {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -1,3 +1,11 @@
-$black: rgba(0, 0, 0, 1);
-$white: rgba(255, 255, 255, 1);
-$base-font-family: "Open Sans", "Arial", sans-serif;
+@mixin list-style-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin button-style-reset {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}

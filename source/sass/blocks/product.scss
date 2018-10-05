@@ -1,31 +1,29 @@
-.product {
-  &__heading {
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: bold;
+.product__heading {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.product__link {
+  text-decoration: none;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    color: rgba($black, 0.6);
   }
 
-  &__link {
-    text-decoration: none;
-    color: $black;
-
-    &:hover,
-    &:focus {
-      color: rgba($black, 0.6);
-    }
-
-    &:active {
-      color: rgba($black, 0.3);
-    }
+  &:active {
+    color: rgba($black, 0.3);
   }
+}
 
-  &__properties {
-    color: rgba(68, 68, 68, 1);
-  }
+.product__properties {
+  color: $font-gray;
+}
 
-  &__price {
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: bold;
-  }
+.product__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
 }

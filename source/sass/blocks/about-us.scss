@@ -2,27 +2,54 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: auto 6px;
+}
 
-  &__container {
-    width: 260px;
-    margin: 0 auto;
+.about-us__container {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.about-us__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.about-us__list {
+  @include list-style-reset;
+}
+
+.about-us__item {
+  padding-top: 60px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  &--material {
+    background-image: url("../img/icon-feature-flower.svg");
   }
 
-  &__heading {
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: bold;
+  &--price {
+    background-image: url("../img/icon-feature-money.svg");
   }
 
-  &__list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  &--like {
+    background-image: url("../img/icon-feature-heart.svg");
   }
 
-  &__item {
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: bold;
+  &--by-hand {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--support {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--packing {
+    background-image: url("../img/icon-feature-gift.svg");
   }
 }

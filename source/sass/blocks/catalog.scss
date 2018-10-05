@@ -1,12 +1,8 @@
-.catalog {
-  &__container {
-    width: 260px;
-    margin: 0 auto;
-  }
+.catalog__container {
+  width: 260px;
+  margin: 0 auto;
+}
 
-  &__list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+.catalog__list {
+  @include list-style-reset;
 }

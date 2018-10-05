@@ -1,20 +1,18 @@
-.copyright {
-  &__heading {
-    font-size: 19px;
-    line-height: 18px;
-    font-weight: bold;
-    color: $black;
+.copyright__heading {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $black;
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
+}
 
-  &__link {
-    text-decoration: none;
+.copyright__link {
+  text-decoration: none;
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }

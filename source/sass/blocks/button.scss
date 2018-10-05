@@ -4,12 +4,12 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
-  color: rgba(68, 68, 68, 1);
+  color: $font-gray;
   background-color: transparent;
   text-transform: uppercase;
   text-align: center;
   outline: none;
-  border: 2px solid rgba(68, 68, 68, 1);
+  border: 2px solid $font-gray;
 
   &--big-font {
     font-size: 18px;
@@ -18,11 +18,11 @@
   &:hover,
   &:focus {
     color: $white;
-    background-color: rgba(68, 68, 68, 1);
+    background-color: $font-gray;
   }
 
   &:active {
     color: rgba($white, 0.3);
-    background-color: rgba(68, 68, 68, 1);
+    background-color: $font-gray;
   }
 }
