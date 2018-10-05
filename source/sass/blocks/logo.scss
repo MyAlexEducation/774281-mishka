@@ -1,0 +1,19 @@
+.logo {
+  padding: 20px 0;
+  border-top: 2px solid $border-light-gray;
+}
+
+.logo__link {
+  display: block;
+  width: 86px;
+  margin: 0 auto;
+
+  &:not(&--current):hover,
+  &:not(&--current):focus {
+    opacity: 0.6;
+  }
+
+  &:not(&--current):active {
+    opacity: 0.3;
+  }
+}

@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Мишка каталог</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header">
   <div class="header__container">
     <div class="logo">
-      <a href="index.html">
-        <img src="http://placehold.it/150x100" alt="Логотип">
+      <a href="index.html" class="logo__link">
+        <img src="img/logo-mobile.svg" class="logo__image" alt="Логотип">
       </a>
     </div>
     <nav class="navigation">
-      <button type="button" class="navigation__switch"><span class="visually-hidden">Открыть/закрыть меню</span>
+      <button type="button" class="navigation__switch navigation__switch--open"><span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link">Каталог товаров</a>
+          <a class="navigation__link navigation__link--current">Каталог товаров</a>
         </li>
         <li class="navigation__item">
           <a href="form.html" class="navigation__link">Вязание на заказ</a>
@@ -43,11 +44,11 @@
   <section class="catalog">
     <div class="catalog__container">
       <h2 class="visually-hidden">Наши товары:</h2>
-      <ul class="product-list">
-        <li class="product-list__item">
+      <ul class="catalog__list">
+        <li class="catalog__item">
           <article class="product">
             <a href="product-description.html" class="product__link">
-              <img src="http://placehold.it/150x100" class="product__photo" alt="">
+              <img src="img/photo-hare-mobile@1x.jpg" class="product__photo" alt="">
             </a>
             <div class="product__info">
               <h1 class="product__heading">
@@ -59,10 +60,10 @@
             </div>
           </article>
         </li>
-        <li class="product-list__item">
+        <li class="catalog__item">
           <article class="product">
             <a href="product-description.html" class="product__link">
-              <img src="http://placehold.it/150x100" class="product__photo" alt="">
+              <img src="img/photo-bowl-mobile@1x.jpg" class="product__photo" alt="">
             </a>
             <div class="product__info">
               <h1 class="product__heading">
@@ -74,10 +75,10 @@
             </div>
           </article>
         </li>
-        <li class="product-list__item">
+        <li class="catalog__item">
           <article class="product">
             <a href="product-description.html" class="product__link">
-              <img src="http://placehold.it/150x100" class="product__photo" alt="">
+              <img src="img/photo-toys-mobile@1x.jpg" class="product__photo" alt="">
             </a>
             <div class="product__info">
               <h1 class="product__heading">
@@ -95,9 +96,9 @@
   <section class="video">
     <div class="video__container">
       <h2 class="video__heading">Процесс производства</h2>
-      <img src="http://placehold.it/150x100" alt="Заставка видео" class="video__content">
+      <img src="img/video-mobile@1x.jpg" alt="Заставка видео" class="video__content">
       <div class="video__controls">
-        <button class="video__play"></button>
+        <button class="video__button video__button--play"></button>
       </div>
       <p class="video__info">
         По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
@@ -122,7 +123,7 @@
     <section class="copyright">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
         <h2 class="copyright__heading">Разработано</h2>
-        <img src="http://placehold.it/150x100" class="copyright__logo" alt="htmlacademy">
+        <img src="img/logo-htmlacademy.svg" class="copyright__logo" alt="htmlacademy">
       </a>
     </section>
   </div>

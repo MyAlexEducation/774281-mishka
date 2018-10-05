@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header">
   <div class="header__container">
     <div class="logo">
-      <a href="index.html">
-        <img src="http://placehold.it/150x100" alt="Логотип">
+      <a href="index.html"  class="logo__link">
+        <img src="img/logo-mobile.svg" class="logo__image" alt="Логотип">
       </a>
     </div>
     <nav class="navigation">
-      <button type="button" class="navigation__switch">
+      <button type="button" class="navigation__switch navigation__switch--open">
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
       <ul class="navigation__list">
@@ -21,7 +22,7 @@
           <a href="catalog.html" class="navigation__link">Каталог товаров</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link">Вязание на заказ</a>
+          <a class="navigation__link navigation__link--current">Вязание на заказ</a>
         </li>
         <li class="navigation__item">
           <a href="#" class="navigation__link navigation__link--search">Поиск по сайту</a>
@@ -44,7 +45,9 @@
   <section class="order">
     <div class="order__container">
       <h2 class="visually-hidden">Форма заказа:</h2>
-      <p class="promotion"></p>
+      <p class="order__promotion">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
       <form method="post" action="https://echo.htmlacademy.ru" class="order__form">
         <fieldset class="order__fieldset">
           <legend class="order__legend">Тип</legend>
@@ -87,7 +90,7 @@
         </fieldset>
         <fieldset class="order__fieldset">
           <legend class="order__legend">Доп</legend>
-          <textarea class="order__textarea">Опишите все ваши пожелания к заказу</textarea>
+          <textarea class="order__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <p class="order__prompt">
           *Поля обязательны для заполнения
@@ -118,7 +121,7 @@
     <section class="copyright">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
         <h2 class="copyright__heading">Разработано</h2>
-        <img src="http://placehold.it/150x100" class="copyright__logo" alt="htmlacademy">
+        <img src="img/logo-htmlacademy.svg" class="copyright__logo" alt="htmlacademy">
       </a>
     </section>
   </div>

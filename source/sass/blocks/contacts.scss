@@ -1,0 +1,40 @@
+.contacts {
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+}
+
+.contacts__container {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.contacts__heading {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts__info {
+  color: $font-gray;
+}
+
+.contacts__value {
+  color: $font-gray;
+
+  &--mail {
+    text-decoration: none;
+    border-bottom: 1px solid $aquamarine;
+
+    &:hover,
+    &:focus {
+      color: $aquamarine-dark-interactive;
+      border-bottom: 1px solid $aquamarine-dark-interactive;
+    }
+
+    &:active {
+      color: rgba($aquamarine-dark-interactive, 0.3);
+      border-bottom: 1px solid rgba($aquamarine-dark-interactive, 0.1);
+    }
+  }
+}

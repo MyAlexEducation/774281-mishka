@@ -1,0 +1,8 @@
+.catalog__container {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.catalog__list {
+  @include list-style-reset;
+}

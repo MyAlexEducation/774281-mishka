@@ -1,0 +1,51 @@
+.promotion-product__container {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.promotion-product__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.promotion-product__event {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $aquamarine;
+  text-transform: uppercase;
+}
+
+.promotion-product__description {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 24px;
+  color: $font-gray;
+}
+
+.promotion-product__properties {
+  border-collapse: collapse;
+}
+
+.promotion-product__cell {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+  text-align: left;
+  color: $font-gray;
+  border-bottom: 1px solid $border-light-gray;
+}
+
+.promotion-product__price {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: $font-gray;
+}
