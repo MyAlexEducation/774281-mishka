@@ -27,3 +27,15 @@
   line-height: 24px;
   font-weight: bold;
 }
+
+@media (min-width: $tablet-width) {
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width){
+  .product {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+}

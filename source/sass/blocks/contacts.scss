@@ -38,3 +38,49 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__container {
+    width: $tablet-content-width;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+  .contacts__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__heading {
+    width: 100%;
+  }
+
+  .contacts__info {
+    width: 50%;
+  }
+
+  .contacts__map {
+    width: 100%;
+  }
+
+  .contacts__letter {
+    width: 230px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__container {
+    position: relative;
+    min-height: 460px;
+    width: $desktop-content-width - 530px;
+    margin: 0 auto;
+    padding-right: 530px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

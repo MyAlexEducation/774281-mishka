@@ -8,3 +8,24 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.form-size__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-size__radio {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-cart {
+    width: 560px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-cart {
+    width: 570px;
+  }
+}

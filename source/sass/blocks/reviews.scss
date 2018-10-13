@@ -65,3 +65,41 @@
     background-image: url("../img/icon-right-arrow.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .reviews__container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: $tablet-content-width;
+  }
+
+  .reviews__container::before {
+    content: "";
+    width: 100%;
+    order: -1;
+  }
+
+  .reviews__heading {
+    width: 300px;
+    order: -3;
+  }
+
+  .reviews__write {
+    margin-left: auto;
+    order: -2;
+  }
+
+  .reviews__toggles {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__container {
+    width: $desktop-content-width;
+  }
+}

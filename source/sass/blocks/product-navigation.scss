@@ -1,7 +1,5 @@
-.product-navigation {
-  .product-navigation__list {
-    @include list-style-reset;
-  }
+.product-navigation__list {
+  @include list-style-reset;
 }
 
 .product-navigation__link {
@@ -39,5 +37,23 @@
       color: rgba($white, 0.3);
       background-color: $aquamarine-dark-interactive;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product-navigation__list {
+    display: flex;
+    width: $tablet-content-width;
+    margin: 0 auto;
+  }
+
+  .product-navigation__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-navigation__list {
+    width: $desktop-content-width;
   }
 }

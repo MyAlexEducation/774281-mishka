@@ -1,13 +1,10 @@
 .logo {
-  padding: 20px 0;
   border-top: 2px solid $border-light-gray;
+  width: 86px;
+  margin: 0 auto;
 }
 
 .logo__link {
-  display: block;
-  width: 86px;
-  margin: 0 auto;
-
   &:not(&--current):hover,
   &:not(&--current):focus {
     opacity: 0.6;
@@ -15,5 +12,23 @@
 
   &:not(&--current):active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    position: absolute;
+    z-index: 1;
+    width: 113px;
+    height: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 149px;
+    height: 72px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

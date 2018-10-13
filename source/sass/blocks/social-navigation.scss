@@ -1,11 +1,18 @@
 .social-navigation__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  @include list-style-reset;
 }
 
 .social-navigation__icon {
   &:active {
     opacity: 0.3;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .social-navigation__list {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
 }
