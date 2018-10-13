@@ -15,4 +15,7 @@
 }
 
 @media (min-width: $desktop-width) {
+  .social-navigation__list {
+    display: flex;
+  }
 }
