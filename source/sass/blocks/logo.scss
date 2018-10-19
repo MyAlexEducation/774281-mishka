@@ -18,9 +18,13 @@
 @media (min-width: $tablet-width) {
   .logo {
     position: absolute;
+    left: 50%;
+    transform: translateX(-334px);
+    top: 20px;
     z-index: 1;
     width: 113px;
     height: 46px;
+    border: none;
   }
 }
 

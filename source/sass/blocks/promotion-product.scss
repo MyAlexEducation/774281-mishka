@@ -55,18 +55,43 @@
   .promotion-product__container {
     position: relative;
     width: $tablet-content-width;
-    min-height: 610px;
+    min-height: 505px;
+  }
+
+  .promotion-product__heading {
+    margin-bottom: 60px;
+  }
+
+  .promotion-product__description {
+    width: 300px;
+    margin-bottom: 50px;
+  }
+
+  .promotion-product__properties {
+    width: 300px;
+    margin-bottom: 50px;
+  }
+
+  .promotion-product__price {
+    width: 300px;
+    margin-bottom: 50px;
+  }
+
+  .promotion-product__order {
+    width: 300px;
   }
 
   .promotion-product__event {
     position: absolute;
+    width: 100px;
+    text-align: center;
     top: 0;
     right: 0;
   }
 
   .promotion-product__photo {
     position: absolute;
-    top: 50px;
+    top: 100px;
     right: 0;
   }
 }

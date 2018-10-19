@@ -73,6 +73,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
   .reviews__container {
     display: flex;
     flex-wrap: wrap;
@@ -91,14 +96,20 @@
     order: -3;
   }
 
+  .reviews__text {
+    padding: 60px 0;
+  }
+
   .reviews__write {
+    align-self: center;
+    padding: 15px 35px;
     margin-left: auto;
     order: -2;
   }
 
   .reviews__toggles {
     position: absolute;
-    bottom: 0;
+    bottom: -26px;
     right: 0;
     z-index: 1;
   }

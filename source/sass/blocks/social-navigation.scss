@@ -1,7 +1,7 @@
 .social-navigation__list {
   @include list-style-reset;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .social-navigation__icon {
@@ -11,6 +11,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .social-navigation__list {
+    width: 140px;
+  }
 }
 
 @media (min-width: $desktop-width) {

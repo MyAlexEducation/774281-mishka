@@ -59,6 +59,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .product-navigation {
+    margin-bottom: 60px;
+  }
+
   .product-navigation__list {
     display: flex;
     width: $tablet-content-width;
@@ -67,6 +71,10 @@
 
   .product-navigation__item {
     width: 50%;
+  }
+
+  .product-navigation__link {
+    width: 100%;
   }
 }
 
