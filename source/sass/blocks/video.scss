@@ -10,9 +10,15 @@
 .video__button {
   position: absolute;
   z-index: 1;
+  width: 101px;
+  height: 77px;
+  left: 50%;
+  top: -115px;
+  transform: translateX(-55px);
   outline: none;
   border: none;
   background-color: transparent;
+  background-image: url("../img/icon-play.svg");
 }
 
 .video__info {
@@ -28,7 +34,24 @@
     width: $tablet-content-width;
   }
 
+  .video__heading {
+    padding-left: 65px;
+    margin: 0 40px;
+  }
+
+  .video__info {
+    margin: 0 40px;
+  }
+
+  .video__link {
+    margin: 0 40px;
+  }
+
   .video__content {
+    order: -1;
+  }
+
+  .video__controls {
     order: -1;
   }
 }
