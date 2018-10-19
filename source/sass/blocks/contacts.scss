@@ -95,17 +95,41 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contacts__container {
+  .contacts {
     position: relative;
     min-height: 460px;
+  }
+
+  .contacts__heading {
     width: $desktop-content-width - 530px;
     margin: 0 auto;
     padding-right: 530px;
+    padding-left: 175px;
+  }
+
+  .contacts__container {
+    width: $desktop-content-width - 530px;
+    padding-right: 530px;
+    padding-left: 175px;
+    margin: 0 auto;
+  }
+
+  .contacts__info {
+    margin: 0;
+  }
+
+  .contacts__letter {
+    display: block;
+    width: 230px;
+    margin: 0 auto;
+    position: relative;
+    left: -345px;
   }
 
   .contacts__map {
     position: absolute;
+    width: 525px;
     top: 0;
-    right: 0;
+    left: 50%;
   }
 }

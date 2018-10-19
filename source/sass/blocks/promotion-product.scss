@@ -99,17 +99,51 @@
 @media (min-width: $desktop-width) {
   .promotion-product__container {
     width: $desktop-content-width;
+    min-height: 630px;
+  }
+
+  .promotion-product__heading {
+    padding-top: 50px;
+    margin-bottom: 60px;
+    margin-left: 175px;
+    font-size: 53px;
+  }
+
+  .promotion-product__description {
+    width: 300px;
+    margin-bottom: 50px;
+    margin-left: 175px;
+  }
+
+  .promotion-product__properties {
+    width: 300px;
+    margin-bottom: 50px;
+    margin-left: 175px;
+  }
+
+  .promotion-product__price {
+    width: 300px;
+    margin-bottom: 50px;
+    margin-left: 175px;
+  }
+
+  .promotion-product__order {
+    width: 300px;
+    margin-left: 175px;
   }
 
   .promotion-product__event {
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 0;
   }
 
   .promotion-product__photo {
     position: absolute;
-    top: 50px;
+    width: 520px;
+    height: 630px;
+    top: 0;
     right: 0;
+    z-index: -1;
   }
 }
