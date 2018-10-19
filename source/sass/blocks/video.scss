@@ -69,5 +69,16 @@
     position: absolute;
     left: 0;
     top: 0;
+    width: 682px;
+    height: 455px;
+  }
+
+  .video__controls {
+    position: static;
+  }
+
+  .video__button {
+    left: 341px;
+    top: 227px;
   }
 }
