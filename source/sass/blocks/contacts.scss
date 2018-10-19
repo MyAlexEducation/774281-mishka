@@ -4,22 +4,23 @@
   background-size: auto 6px;
 }
 
-.contacts__container {
+.contacts__heading {
   width: 260px;
   margin: 0 auto;
-}
-
-.contacts__heading {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
 }
 
 .contacts__info {
+  width: 260px;
+  margin: 0 auto;
   color: $font-gray;
 }
 
 .contacts__value {
+  width: 260px;
+  margin: 0 auto;
   color: $font-gray;
 
   &--mail {
@@ -37,6 +38,18 @@
       border-bottom: 1px solid rgba($aquamarine-dark-interactive, 0.1);
     }
   }
+}
+
+.contacts__map {
+  display: block;
+  width: 322px;
+  height: 457px;
+  margin: 0 auto;
+}
+
+.contacts__letter {
+  width: 260px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {

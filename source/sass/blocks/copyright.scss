@@ -1,3 +1,8 @@
+.copyright {
+  display: flex;
+  justify-content: space-around;
+}
+
 .copyright__heading {
   font-size: 19px;
   line-height: 18px;
@@ -19,13 +24,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .copyright {
-    display: flex;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .copyright {
-    display: flex;
-  }
 }
