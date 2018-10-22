@@ -2,6 +2,7 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: auto 6px;
+  padding-top: 30px;
 }
 
 .about-us__container {
@@ -12,6 +13,7 @@
 .about-us__heading {
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -22,7 +24,9 @@
 }
 
 .about-us__item {
+  width: 200px;
   padding-top: 60px;
+  padding-bottom: 30px;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
@@ -55,8 +59,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 60px;
+  }
+
   .about-us__container {
     width: $tablet-content-width;
+  }
+
+  .about-us__heading {
+    margin-bottom: 60px;
   }
 
   .about-us__list {
@@ -65,12 +77,23 @@
   }
 
   .about-us__item {
-    width: 50%;
+    width: 299px;
+    padding-bottom: 60px;
+    padding-right: 35px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-us__container {
-    width: $desktop-content-width;
+    width: $desktop-content-width - 175px;
+    padding-left: 175px;
+  }
+
+  .about-us__item {
+    width: 300px;
+    padding-bottom: 60px;
+    padding-right: 50px;
+    font-size: 20px;
   }
 }
