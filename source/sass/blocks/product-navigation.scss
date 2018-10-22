@@ -74,12 +74,19 @@
   }
 
   .product-navigation__link {
-    width: 100%;
+    display: block;
+    width: auto;
+    padding-left: 35px;
+    padding-right: 165px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-navigation__list {
     width: $desktop-content-width;
+  }
+
+  .product-navigation__link {
+    padding-right: 370px;
   }
 }
