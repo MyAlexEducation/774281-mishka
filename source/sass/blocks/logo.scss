@@ -1,7 +1,7 @@
 .logo {
-  border-top: 2px solid $border-light-gray;
-  width: 86px;
+  width: 100%;
   margin: 0 auto;
+  border-top: 2px solid $border-light-gray;;
 }
 
 .logo__link {
@@ -12,6 +12,14 @@
 
   &:not(&--current):active {
     opacity: 0.3;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .logo__link {
+    display: block;
+    width: 87px;
+    margin: 0 auto;
   }
 }
 
