@@ -9,13 +9,76 @@
 
 .video__button {
   position: absolute;
+  z-index: 1;
+  width: 101px;
+  height: 77px;
+  left: 50%;
+  top: -115px;
+  transform: translateX(-55px);
   outline: none;
   border: none;
   background-color: transparent;
+  background-image: url("../img/icon-play.svg");
 }
 
 .video__info {
   font-size: 13px;
   line-height: 24px;
   color: $font-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .video__container {
+    display: flex;
+    flex-direction: column;
+    width: $tablet-content-width;
+  }
+
+  .video__heading {
+    padding-left: 65px;
+    margin: 0 40px;
+  }
+
+  .video__info {
+    margin: 0 40px;
+  }
+
+  .video__link {
+    margin: 0 40px;
+  }
+
+  .video__content {
+    order: -1;
+  }
+
+  .video__controls {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__container {
+    position: relative;
+    display: block;
+    padding-left: 700px;
+    width: $desktop-content-width - 700px;
+    min-height: 460px;
+  }
+
+  .video__content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 682px;
+    height: 455px;
+  }
+
+  .video__controls {
+    position: static;
+  }
+
+  .video__button {
+    left: 341px;
+    top: 227px;
+  }
 }

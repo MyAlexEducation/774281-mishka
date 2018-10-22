@@ -6,3 +6,29 @@
   width: 260px;
   margin: 0 auto;
 }
+
+@media (max-width: $mobile-width-only) {
+  .footer__logo {
+    @include visually-hidden;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: $tablet-content-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__container {
+    width: $desktop-content-width;
+  }
+}

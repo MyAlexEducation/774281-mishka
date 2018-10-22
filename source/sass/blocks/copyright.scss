@@ -1,3 +1,8 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
 .copyright__heading {
   font-size: 19px;
   line-height: 18px;
@@ -10,9 +15,23 @@
 }
 
 .copyright__link {
+  color: $black;
   text-decoration: none;
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.copyright__logo {
+  margin-bottom: -20px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 180px;
+  }
+}
+
+@media (min-width: $desktop-width) {
 }

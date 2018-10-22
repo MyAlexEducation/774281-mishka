@@ -22,6 +22,18 @@
 }
 
 .heading--gray {
-  background-color: rgba(241, 241, 241, 1);
+  background-color: $background-gray-light;
   background-image: none;
+}
+
+@media (min-width: $tablet-width) {
+  .heading__container {
+    width: $tablet-content-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .heading__container {
+    width: $desktop-content-width;
+  }
 }

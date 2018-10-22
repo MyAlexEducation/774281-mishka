@@ -1,0 +1,10 @@
+@media (min-width: $tablet-width) {
+  .header__container {
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+}
