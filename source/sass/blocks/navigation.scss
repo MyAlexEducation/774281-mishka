@@ -5,9 +5,9 @@
 .navigation__switch {
   @include button-style-reset;
   position: absolute;
-  top: -35px;
+  top: -50px;
   left: 50%;
-  transform: translateX(80px);
+  transform: translateX(110px);
   width: 21px;
   height: 20px;
   background-repeat: no-repeat;

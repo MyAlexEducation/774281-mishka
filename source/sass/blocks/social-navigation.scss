@@ -2,6 +2,14 @@
   @include list-style-reset;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 142px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+.social-navigation__item {
+
 }
 
 .social-navigation__icon {

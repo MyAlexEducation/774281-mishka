@@ -1,4 +1,5 @@
 .contacts {
+  padding-top: 42px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: auto 6px;
@@ -7,6 +8,7 @@
 .contacts__heading {
   width: 260px;
   margin: 0 auto;
+  margin-bottom: 25px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -17,6 +19,7 @@
   align-items: flex-start;
   width: 260px;
   margin: 0 auto;
+  margin-bottom: 30px;
   color: $font-gray;
 }
 
@@ -46,16 +49,22 @@
   }
 }
 
+.contacts__container {
+  margin-bottom: 36px;
+}
+
 .contacts__map {
   display: block;
   width: 322px;
   height: 457px;
   margin: 0 auto;
+  margin-bottom: 38px;
 }
 
 .contacts__letter {
   width: 260px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
