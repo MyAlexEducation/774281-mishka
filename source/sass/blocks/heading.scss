@@ -27,8 +27,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .heading {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -77px;
+  }
+
   .heading__container {
     width: $tablet-content-width;
+  }
+
+  .heading__text {
+    padding-top: 77px;
+    min-height: 350px;
+    font-size: 43px;
+    line-height: 50px;
   }
 }
 

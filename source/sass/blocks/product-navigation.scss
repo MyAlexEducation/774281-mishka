@@ -62,6 +62,7 @@
 @media (min-width: $tablet-width) {
   .product-navigation {
     margin-bottom: 60px;
+    background-color: $background-gray;
   }
 
   .product-navigation__list {
@@ -77,8 +78,12 @@
   .product-navigation__link {
     display: block;
     width: auto;
+    padding-top: 30px;
+    padding-bottom: 25px;
     padding-left: 35px;
     padding-right: 165px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

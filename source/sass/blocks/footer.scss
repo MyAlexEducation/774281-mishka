@@ -16,8 +16,8 @@
 
 @media (min-width: $tablet-width) {
   .footer {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 50px;
+    padding-bottom: 28px;
   }
 
   .footer__container {
@@ -25,6 +25,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: $tablet-content-width;
+    padding: 0;
+  }
+
+  .footer__logo {
+    width: 183px;
   }
 }
 

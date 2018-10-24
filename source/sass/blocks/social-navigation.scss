@@ -20,7 +20,9 @@
 
 @media (min-width: $tablet-width) {
   .social-navigation__list {
-    width: 140px;
+    width: 183px;
+    justify-content: space-around;
+    padding-top: 10px;
   }
 }
 

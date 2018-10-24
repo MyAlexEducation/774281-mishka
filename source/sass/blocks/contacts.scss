@@ -30,7 +30,6 @@
 
 .contacts__value {
   color: $font-gray;
-  width: 225px;
 
   &--mail {
     text-decoration: none;
@@ -69,7 +68,22 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 45px;
+    padding-top: 77px;
+  }
+
+  .contacts__heading {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      top: -15px;
+      right: 3px;
+      background-image: url("../img/icon-flag.svg");
+      background-size: 47px 81px;
+    }
   }
 }
 
@@ -84,22 +98,27 @@
   .contacts__heading {
     width: $tablet-content-width;
     margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .contacts__info {
     width: $tablet-content-width/2;
     margin-bottom: 60px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .contacts__map {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .contacts__letter {
-    width: 230px;
+    width: 225px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
+    font-size: 17px;
   }
 }
 

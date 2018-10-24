@@ -33,6 +33,18 @@
   font-weight: bold;
   background-repeat: no-repeat;
 
+  &:nth-child(3n-2) {
+    order: 1;
+  }
+
+  &:nth-child(3n-1) {
+    order: 2;
+  }
+
+  &:nth-child(3n) {
+    order: 3;
+  }
+
   &--material {
     background-image: url("../img/icon-feature-flower.svg");
     background-position: 8px 0;
@@ -66,7 +78,8 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    padding-top: 60px;
+    padding-top: 68px;
+    margin-bottom: 25px;
   }
 
   .about-us__container {
@@ -74,7 +87,9 @@
   }
 
   .about-us__heading {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .about-us__list {
@@ -84,9 +99,10 @@
 
   .about-us__item {
     width: 299px;
-    padding-bottom: 60px;
+    padding-bottom: 58px;
     padding-right: 35px;
     font-size: 20px;
+    line-height: 22px;
   }
 }
 
