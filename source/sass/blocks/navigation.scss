@@ -99,6 +99,14 @@
       padding-right: 0;
     }
   }
+
+  .navigation--closed .navigation__list {
+    display: none;
+  }
+
+  .navigation--nojs .navigation__list {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
