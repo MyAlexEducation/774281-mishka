@@ -126,13 +126,24 @@
   .contacts {
     position: relative;
     min-height: 460px;
+    padding-top: 95px;
+    margin-bottom: 105px;
   }
 
   .contacts__heading {
     width: $desktop-content-width - 705px;
     margin: 0 auto;
+    margin-bottom: 50px;
+    padding-top: 67px;
     padding-right: 530px;
     padding-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+
+    &::before {
+      top: 60px;
+      left: 62px;
+    }
   }
 
   .contacts__container {
@@ -140,10 +151,15 @@
     padding-right: 530px;
     padding-left: 175px;
     margin: 0 auto;
+    margin-bottom: 45px;
   }
 
   .contacts__info {
+    width: 300px;
     margin: 0;
+    padding-bottom: 33px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .contacts__letter {
@@ -151,13 +167,13 @@
     width: 230px;
     margin: 0 auto;
     position: relative;
-    left: -345px;
+    left: -235px;
   }
 
   .contacts__map {
     position: absolute;
     width: 525px;
-    top: 0;
+    top: 95px;
     left: 50%;
   }
 }

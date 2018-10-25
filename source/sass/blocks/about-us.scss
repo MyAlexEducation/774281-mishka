@@ -107,15 +107,26 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about-us {
+    padding-top: 63px;
+    margin-bottom: 30px;
+  }
+
   .about-us__container {
     width: $desktop-content-width - 175px;
     padding-left: 175px;
   }
 
+  .about-us__heading {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
   .about-us__item {
     width: 300px;
-    padding-bottom: 60px;
+    padding-bottom: 58px;
     padding-right: 50px;
     font-size: 20px;
+    line-height: 22px;
   }
 }

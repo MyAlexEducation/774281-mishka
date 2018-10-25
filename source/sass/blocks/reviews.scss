@@ -166,7 +166,27 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    width: $desktop-content-width - 175px;
+    margin: 0 auto;
+    padding-left: 175px;
+    padding-bottom: 70px;
+    margin-bottom: 70px;
+  }
+
+  .reviews__heading {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
   .reviews__container {
-    width: $desktop-content-width;
+    width: 100%;
+  }
+
+  .reviews__text {
+    width: 770px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    line-height: 30px;
   }
 }

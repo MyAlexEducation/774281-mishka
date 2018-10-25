@@ -88,6 +88,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .product-navigation {
+    margin-bottom: 75px;
+  }
+
   .product-navigation__list {
     width: $desktop-content-width;
   }

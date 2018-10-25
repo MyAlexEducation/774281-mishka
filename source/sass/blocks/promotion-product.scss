@@ -106,17 +106,21 @@
   }
 
   .promotion-product__description {
-    width: 300px;
+    width: 290px;
     margin-bottom: 34px;
     font-size: 17px;
     line-height: 30px;
   }
 
   .promotion-product__properties {
-    width: 300px;
+    width: 290px;
     margin-bottom: 54px;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .promotion-product__cell {
+    padding-top: 8px;
   }
 
   .promotion-product__price {
@@ -153,48 +157,51 @@
   .promotion-product__container {
     width: $desktop-content-width;
     min-height: 630px;
+    padding-top: 50px;
   }
 
   .promotion-product__heading {
-    padding-top: 50px;
-    margin-bottom: 60px;
+    margin-top: 5px;
+    margin-bottom: 55px;
     margin-left: 175px;
     font-size: 53px;
   }
 
   .promotion-product__description {
-    width: 300px;
+    width: 290px;
     margin-bottom: 50px;
     margin-left: 175px;
   }
 
   .promotion-product__properties {
-    width: 300px;
-    margin-bottom: 50px;
+    width: 290px;
+    margin-bottom: 110px;
     margin-left: 175px;
   }
 
   .promotion-product__price {
-    width: 300px;
-    margin-bottom: 50px;
+    width: 290px;
+    margin-bottom: 35px;
     margin-left: 175px;
   }
 
   .promotion-product__order {
-    width: 300px;
+    width: 290px;
     margin-left: 175px;
   }
 
   .promotion-product__event {
     position: absolute;
-    top: 50px;
-    left: 0;
+    top: 70px;
+    left: 30px;
+    font-size: 17px;
+    line-height: 17px;
   }
 
   .promotion-product__photo {
     position: absolute;
-    width: 520px;
-    height: 630px;
+    width: 525px;
+    height: 636px;
     top: 0;
     right: 0;
     z-index: -1;

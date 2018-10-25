@@ -229,14 +229,19 @@
   }
 
   .navigation__item {
-    margin-right: 30px;
+    margin-right: 32px;
 
     &:first-child {
       border-right: 1px solid $border-light-gray;
     }
 
     &--search {
+      margin-right: 0;
       margin-left: auto;
+    }
+
+    &--cart {
+      margin-right: 0;
     }
 
     &:nth-child(n+5) {
@@ -250,14 +255,24 @@
 
   .navigation__link {
     width: 180px;
-    padding-right: 5px;
+    padding-right: 25px;
+    padding-top: 30px;
+    font-size: 17px;
+    line-height: 24px;
 
     &--search {
       width: 25px;
     }
 
     &--cart {
+      padding-right: 0;
       width: auto;
+    }
+
+    &--action {
+      padding-top: 17px;
+      font-size: 15px;
+      line-height: 24px;
     }
   }
 }
