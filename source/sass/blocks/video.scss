@@ -72,27 +72,40 @@
     display: flex;
     flex-direction: column;
     width: $tablet-content-width;
+    padding-bottom: 45px;
   }
 
   .video__heading {
-    padding-left: 65px;
-    margin: 0 40px;
+    padding-left: 105px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .video__info {
-    margin: 0 40px;
+    padding: 0 40px;
+    margin-bottom: 42px;
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .video__link {
+    display: block;
     margin: 0 40px;
+    width: auto;
   }
 
   .video__content {
+    width: 668px;
+    height: 455px;
     order: -1;
   }
 
   .video__controls {
     order: -1;
+  }
+
+  .video__button {
+    top: -280px;
   }
 }
 
