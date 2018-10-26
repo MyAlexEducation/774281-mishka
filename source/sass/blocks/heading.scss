@@ -3,6 +3,7 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -18px;
+  margin-bottom: 30px;
 }
 
 .heading__container {
@@ -26,11 +27,20 @@
   background-image: none;
 }
 
+.heading--gray .heading__text {
+  padding-bottom: 77px;
+}
+
 @media (min-width: $tablet-width) {
   .heading {
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -77px;
+  }
+
+  .heading--gray {
+    background-color: $background-gray-light;
+    background-image: none;
   }
 
   .heading__container {
@@ -53,5 +63,10 @@
   .heading__text {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .heading--gray {
+    background-color: $background-gray-light;
+    background-image: none;
   }
 }

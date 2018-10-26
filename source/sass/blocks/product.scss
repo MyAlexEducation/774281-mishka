@@ -1,4 +1,25 @@
+.product {
+  margin-bottom: 31px;
+}
+
+.product__info {
+  padding-top: 27px;
+  padding-left: 27px;
+  padding-right: 27px;
+  border: 1px solid $border-light-gray;
+
+  &:hover {
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
 .product__heading {
+  margin: 0;
+  margin-bottom: 5px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -25,10 +46,18 @@
 }
 
 .product__properties {
+  margin: 0;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
   color: $font-gray;
+  font-size: 13px;
+  line-height: 30px;
+  border-bottom: 1px solid $border-light-gray;
 }
 
 .product__price {
+  display: block;
+  margin-bottom: 27px;
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
