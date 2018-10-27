@@ -68,16 +68,16 @@
         уточнить детали.
       </p>
       <form method="post" action="https://echo.htmlacademy.ru" class="order__form">
-        <fieldset class="order__fieldset">
-            <legend class="order__legend">Тип</legend>
+        <fieldset class="order__fieldset order__fieldset--type">
+            <legend class="order__legend order__legend--type">Тип</legend>
             <input type="radio" class="order__input order__input--no-display" id="order-form-type-accessory" name="type" value="1">
             <label for="order-form-type-accessory" class="order__label order__label--radio">Аксессуар для интерьера</label>
             <input type="radio" class="order__input order__input--no-display" id="order-form-type-toy" name="type" value="2">
             <label for="order-form-type-toy" class="order__label order__label--radio">Детская игрушка</label>
         </fieldset>
-        <fieldset class="order__fieldset">
+        <fieldset class="order__fieldset order__fieldset--color">
+            <legend class="order__legend order__legend--color">Цвет</legend>
           <div class="order__flex-wrapper">
-            <legend class="order__legend">Цвет</legend>
             <input type="checkbox" class="order__input order__input--no-display" id="order-form-color-white" name="white">
             <label for="order-form-color-white" class="order__label order__label--checkbox">Белый</label>
             <input type="checkbox" class="order__input order__input--no-display" id="order-form-color-gray" name="gray">
@@ -92,8 +92,8 @@
             <label for="order-form-color-orange" class="order__label order__label--checkbox">Оранжевый</label>
           </div>
         </fieldset>
-        <fieldset class="order__fieldset">
-            <legend class="order__legend">ФИО</legend>
+        <fieldset class="order__fieldset order__fieldset--name">
+            <legend class="order__legend order__legend--name">ФИО</legend>
             <label for="order-form-identity-name" class="order__label">Имя:
               <input type="text" class="order__input order__input--text" id="order-form-identity-name" name="name" placeholder="Введите ваше имя*">
             </label>
@@ -105,15 +105,15 @@
             </label>
         </fieldset>
         <fieldset class="order__fieldset">
-            <legend class="order__legend">Тел</legend>
+            <legend class="order__legend order__legend--tel">Тел</legend>
             <input type="tel" class="order__input order__input--tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </fieldset>
         <fieldset class="order__fieldset">
-            <legend class="order__legend">E-mail</legend>
+            <legend class="order__legend order__legend--email">E-mail</legend>
             <input type="email" class="order__input order__input--email" placeholder="Ваш Email*">
         </fieldset>
         <fieldset class="order__fieldset">
-            <legend class="order__legend">Доп</legend>
+            <legend class="order__legend order__legend--add">Доп</legend>
             <textarea class="order__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <div class="order__flex-wrapper">

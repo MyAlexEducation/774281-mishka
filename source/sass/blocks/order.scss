@@ -1,20 +1,30 @@
+.order__form {
+  margin-bottom: 56px;
+}
+
 .order__container {
   width: 260px;
   margin: 0 auto;
 }
 
 .order__promotion {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
   font-size: 13px;
   line-height: 24px;
   color: $font-gray;
 }
 
 .order__fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
   border-top: 1px solid $aquamarine;
 }
 
 .order__legend {
+  padding-right: 22px;
   font-size: 17px;
   line-height: 16px;
   color: $aquamarine;
@@ -22,7 +32,74 @@
   text-transform: uppercase;
 }
 
+.order__input--text {
+  margin-top: 10px;
+  padding-bottom: 12px;
+  margin-bottom: 22px;
+}
+
+.order__fieldset--type {
+  padding-bottom: 27px;
+}
+
+.order__legend--type {
+  margin-bottom: 24px;
+}
+
+.order__label--radio {
+  padding-top: 7px;
+  padding-left: 64px;
+  margin-bottom: 17px;
+}
+
+.order__fieldset--color {
+  padding-bottom: 20px;
+}
+
+
+.order__legend--color {
+  margin-bottom: 18px;
+}
+
+.order__label--checkbox {
+  padding-top: 22px;
+  padding-left: 64px;
+  margin-bottom: 21px;
+}
+
+.order__fieldset--name {
+  margin-bottom: 10px;
+}
+
+.order__legend--name {
+  margin-bottom: 30px;
+}
+
+.order__legend--tel {
+  padding-right: 29px;
+  margin-bottom: 16px;
+}
+
+.order__input--tel {
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.order__legend--email {
+  margin-bottom: 15px;
+}
+
+.order__input--email {
+  padding-bottom: 15px;
+  margin-bottom: 32px;
+}
+
+.order__legend--add {
+  margin-bottom: 25px;
+}
+
 .order__input {
+  width: 100%;
   font-size: 19px;
   line-height: 18px;
   color: $font-gray;
@@ -54,7 +131,13 @@
 }
 
 .order__textarea {
-  font-size: 19px;
+  width: 226px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 120px;
+  font-size: 17px;
   line-height: 18px;
   color: $font-gray;
   outline: none;
@@ -79,9 +162,17 @@
 }
 
 .order__prompt {
+  padding: 0;
+  margin: 0;
+  padding-top: 7px;
+  padding-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
   color: $font-gray;
+}
+
+.order__button {
+  width: 260px;
 }
 
 @media (min-width: $tablet-width) {
