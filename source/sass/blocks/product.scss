@@ -126,6 +126,34 @@
   .product {
     display: flex;
     flex-direction: column;
-    width: 315px;
+    width: 316px;
+  }
+
+  .product__photo {
+    width: 316px;
+    height: 462px;
+  }
+
+  .product__info {
+    width: 264px;
+    padding-top: 26px;
+    padding-left: 25px;
+    padding-right: 25px;
+    flex-grow: 1;
+  }
+
+  .product__heading {
+    padding-right: 27px;
+  }
+
+  .product__properties {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    border: none;
+  }
+
+  .product__price {
+    margin-top: auto;
+    border-top: 1px solid $border-light-gray;
   }
 }

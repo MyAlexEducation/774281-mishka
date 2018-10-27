@@ -62,6 +62,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .heading {
+    margin-bottom: 0;
+  }
+
   .heading__container {
     width: $desktop-content-width;
   }
