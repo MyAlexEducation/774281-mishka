@@ -16,7 +16,8 @@
   display: flex;
   width: 260px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding-top: 25px;
+  padding-bottom: 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
@@ -61,6 +62,7 @@
 @media (min-width: $tablet-width) {
   .product-navigation {
     margin-bottom: 60px;
+    background-color: $background-gray;
   }
 
   .product-navigation__list {
@@ -76,12 +78,20 @@
   .product-navigation__link {
     display: block;
     width: auto;
+    padding-top: 30px;
+    padding-bottom: 25px;
     padding-left: 35px;
     padding-right: 165px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .product-navigation {
+    margin-bottom: 75px;
+  }
+
   .product-navigation__list {
     width: $desktop-content-width;
   }

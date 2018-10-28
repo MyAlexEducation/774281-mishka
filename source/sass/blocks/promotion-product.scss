@@ -1,6 +1,7 @@
 .promotion-product__container {
   width: 260px;
   margin: 0 auto;
+  padding-top: 28px;
 }
 
 .promotion-product__heading {
@@ -10,19 +11,23 @@
   line-height: 30px;
   font-weight: bold;
   white-space: nowrap;
+  margin-bottom: 6px;
 }
 
 .promotion-product__event {
+  display: block;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   color: $aquamarine;
   text-transform: uppercase;
+  margin-bottom: 22px;
 }
 
 .promotion-product__description {
   margin: 0;
   padding: 0;
+  margin-bottom: 16px;
   font-size: 15px;
   line-height: 24px;
   color: $font-gray;
@@ -30,9 +35,32 @@
 
 .promotion-product__properties {
   border-collapse: collapse;
+  margin-bottom: 28px;
+  width: $mobile-content-width;
+}
+
+.promotion-product__properties tbody {
+  display: flex;
+}
+
+.promotion-product__properties tr {
+  display: flex;
+  flex-direction: column;
+
+  &:nth-child(2) {
+    flex-grow: 1;
+  }
+}
+
+.promotion-product__properties th {
+  width: 92px;
+  padding-right: 3px;
 }
 
 .promotion-product__cell {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 15px;
   line-height: 20px;
   font-weight: normal;
@@ -41,9 +69,14 @@
   border-bottom: 1px solid $border-light-gray;
 }
 
+.promotion-product__photo {
+  margin-bottom: 15px;
+}
+
 .promotion-product__price {
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -51,42 +84,66 @@
   color: $font-gray;
 }
 
+.promotion-product__order {
+  margin-bottom: 35px;
+}
+
 @media (min-width: $tablet-width) {
   .promotion-product__container {
     position: relative;
     width: $tablet-content-width;
     min-height: 505px;
+    padding-top: 0;
   }
 
   .promotion-product__heading {
-    margin-bottom: 60px;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+    margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .promotion-product__description {
-    width: 300px;
-    margin-bottom: 50px;
+    width: 290px;
+    margin-bottom: 34px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .promotion-product__properties {
-    width: 300px;
-    margin-bottom: 50px;
+    width: 290px;
+    margin-bottom: 54px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .promotion-product__cell {
+    padding-top: 8px;
   }
 
   .promotion-product__price {
-    width: 300px;
-    margin-bottom: 50px;
+    width: 290px;
+    margin-bottom: 35px;
+    padding-right: 10px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .promotion-product__order {
-    width: 300px;
+    width: 290px;
+    margin-bottom: 50px;
   }
 
   .promotion-product__event {
     position: absolute;
     width: 100px;
     text-align: center;
-    top: 0;
-    right: 0;
+    top: 12px;
+    right: 12px;
+    font-size: 17px;
+    line-height: 17px;
   }
 
   .promotion-product__photo {
@@ -100,48 +157,51 @@
   .promotion-product__container {
     width: $desktop-content-width;
     min-height: 630px;
+    padding-top: 50px;
   }
 
   .promotion-product__heading {
-    padding-top: 50px;
-    margin-bottom: 60px;
+    margin-top: 5px;
+    margin-bottom: 55px;
     margin-left: 175px;
     font-size: 53px;
   }
 
   .promotion-product__description {
-    width: 300px;
+    width: 290px;
     margin-bottom: 50px;
     margin-left: 175px;
   }
 
   .promotion-product__properties {
-    width: 300px;
-    margin-bottom: 50px;
+    width: 290px;
+    margin-bottom: 110px;
     margin-left: 175px;
   }
 
   .promotion-product__price {
-    width: 300px;
-    margin-bottom: 50px;
+    width: 290px;
+    margin-bottom: 35px;
     margin-left: 175px;
   }
 
   .promotion-product__order {
-    width: 300px;
+    width: 290px;
     margin-left: 175px;
   }
 
   .promotion-product__event {
     position: absolute;
-    top: 50px;
-    left: 0;
+    top: 70px;
+    left: 30px;
+    font-size: 17px;
+    line-height: 17px;
   }
 
   .promotion-product__photo {
     position: absolute;
-    width: 520px;
-    height: 630px;
+    width: 525px;
+    height: 636px;
     top: 0;
     right: 0;
     z-index: -1;

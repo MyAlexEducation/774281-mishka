@@ -2,6 +2,7 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: auto 6px;
+  padding-top: 34px;
 }
 
 .about-us__container {
@@ -12,6 +13,7 @@
 .about-us__heading {
   margin: 0;
   padding: 0;
+  margin-bottom: 33px;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -22,41 +24,72 @@
 }
 
 .about-us__item {
-  padding-top: 60px;
+  position: relative;
+  width: 250px;
+  padding-top: 53px;
+  padding-bottom: 30px;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   background-repeat: no-repeat;
-  background-position: top left;
+
+  &:nth-child(3n-2) {
+    order: 1;
+  }
+
+  &:nth-child(3n-1) {
+    order: 2;
+  }
+
+  &:nth-child(3n) {
+    order: 3;
+  }
 
   &--material {
     background-image: url("../img/icon-feature-flower.svg");
+    background-position: 8px 0;
   }
 
   &--price {
     background-image: url("../img/icon-feature-money.svg");
+    background-position: 0 0;
   }
 
   &--like {
     background-image: url("../img/icon-feature-heart.svg");
+    background-position: 8px 4px;
   }
 
   &--by-hand {
     background-image: url("../img/icon-feature-ball.svg");
+    background-position: 4px 2px;
   }
 
   &--support {
     background-image: url("../img/icon-feature-rocket.svg");
+    background-position: 0 2px;
   }
 
   &--packing {
     background-image: url("../img/icon-feature-gift.svg");
+    background-position: 2px 2px;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 68px;
+    margin-bottom: 25px;
+  }
+
   .about-us__container {
     width: $tablet-content-width;
+  }
+
+  .about-us__heading {
+    margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .about-us__list {
@@ -65,12 +98,35 @@
   }
 
   .about-us__item {
-    width: 50%;
+    width: 299px;
+    padding-bottom: 58px;
+    padding-right: 35px;
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .about-us {
+    padding-top: 63px;
+    margin-bottom: 30px;
+  }
+
   .about-us__container {
-    width: $desktop-content-width;
+    width: $desktop-content-width - 175px;
+    padding-left: 175px;
+  }
+
+  .about-us__heading {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__item {
+    width: 300px;
+    padding-bottom: 58px;
+    padding-right: 50px;
+    font-size: 20px;
+    line-height: 22px;
   }
 }

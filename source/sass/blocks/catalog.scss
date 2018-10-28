@@ -10,16 +10,22 @@
 @media (min-width: $tablet-width) {
   .catalog__container {
     width: $tablet-content-width;
-    padding-top: 85px;
+    padding-top: 53px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__container {
     width: $desktop-content-width;
+    padding-top: 150px;
   }
 
   .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
     display: flex;
   }
 

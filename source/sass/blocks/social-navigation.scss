@@ -2,6 +2,14 @@
   @include list-style-reset;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 142px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+.social-navigation__item {
+
 }
 
 .social-navigation__icon {
@@ -12,7 +20,9 @@
 
 @media (min-width: $tablet-width) {
   .social-navigation__list {
-    width: 140px;
+    width: 183px;
+    justify-content: space-around;
+    padding-top: 10px;
   }
 }
 

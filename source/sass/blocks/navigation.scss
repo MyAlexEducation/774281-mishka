@@ -5,9 +5,9 @@
 .navigation__switch {
   @include button-style-reset;
   position: absolute;
-  top: -35px;
+  top: -50px;
   left: 50%;
-  transform: translateX(80px);
+  transform: translateX(110px);
   width: 21px;
   height: 20px;
   background-repeat: no-repeat;
@@ -99,13 +99,21 @@
       padding-right: 0;
     }
   }
+
+  .navigation--closed .navigation__list {
+    display: none;
+  }
+
+  .navigation--nojs .navigation__list {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .navigation {
-    background-image: linear-gradient(transparent 90px,
-                                      $border-light-gray 90px, $border-light-gray 91px,
-                                      $background-gray 91px, $background-gray 100%);
+    background-image: linear-gradient(transparent 88px,
+                                      $border-light-gray 88px, $border-light-gray 89px,
+                                      $background-gray 89px, $background-gray 100%);
 
     &--gray {
       background-image: linear-gradient(transparent 90px,
@@ -126,25 +134,35 @@
   }
 
   .navigation__link {
-    min-width: 160px;
+    max-width: 160px;
+    padding-top: 17px;
     padding-right: 7px;
+    font-size: 15px;
 
     &--search {
       min-width: 0;
+      max-width: none;
+      min-height: 24px;
       width: 25px;
+      padding-top: 30px;
       padding-left: 30px;
-      padding-right: 30px;
+      padding-right: 27px;
       text-align: center;
+      font-size: 17px;
     }
 
     &--cart {
       width: auto;
-      padding-left: 80px;
+      max-width: none;
+      padding-top: 30px;
+      padding-left: 83px;
       padding-right: 0;
+      font-size: 17px;
     }
 
     .navigation__icon {
-      left: 35px;
+      bottom: 35px;
+      left: 33px;
     }
   }
 
@@ -166,7 +184,9 @@
 
   .navigation__info {
     margin-left: auto;
-    padding: 26px 0;
+    padding: 17px 0;
+    font-size: 15px;
+    line-height: 24px;
   }
 }
 
@@ -209,14 +229,19 @@
   }
 
   .navigation__item {
-    margin-right: 30px;
+    margin-right: 32px;
 
     &:first-child {
       border-right: 1px solid $border-light-gray;
     }
 
     &--search {
+      margin-right: 0;
       margin-left: auto;
+    }
+
+    &--cart {
+      margin-right: 0;
     }
 
     &:nth-child(n+5) {
@@ -230,14 +255,25 @@
 
   .navigation__link {
     width: 180px;
-    padding-right: 5px;
+    padding-right: 25px;
+    padding-top: 30px;
+    font-size: 17px;
+    line-height: 24px;
 
     &--search {
       width: 25px;
+      padding-right: 27px;
     }
 
     &--cart {
+      padding-right: 0;
       width: auto;
+    }
+
+    &--action {
+      padding-top: 17px;
+      font-size: 15px;
+      line-height: 24px;
     }
   }
 }
