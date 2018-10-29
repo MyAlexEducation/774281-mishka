@@ -169,7 +169,11 @@
         <a class="contacts__value">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp19/8,&nbsp;офис&nbsp;101</a>
       </div>
     </div>
-    <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+    <picture>
+      <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+      <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+      <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+    </picture>
     <a href="contacts.html" class="contacts__letter button button--big-font">Напишите нам</a>
   </section>
 </main>
