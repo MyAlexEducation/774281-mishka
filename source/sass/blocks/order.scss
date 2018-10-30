@@ -47,12 +47,34 @@
 }
 
 .order__label--radio {
+  position: relative;
   padding-top: 7px;
   padding-left: 64px;
   margin-bottom: 17px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 2px solid $font-gray;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+  }
 }
 
-
+.order__input--radio:checked + .order__label--radio::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $aquamarine;
+}
 
 .order__fieldset--color {
   padding-bottom: 20px;
@@ -64,9 +86,33 @@
 }
 
 .order__label--checkbox {
+  position: relative;
   padding-top: 22px;
   padding-left: 64px;
   margin-bottom: 21px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 2px solid $font-gray;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+  }
+}
+
+.order__input--checkbox:checked + .order__label--checkbox::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: 22px 16px;
 }
 
 .order__fieldset--name {
