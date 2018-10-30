@@ -28,10 +28,16 @@
   padding-right: 40px;
   font-size: 17px;
   line-height: 24px;
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 22px;
+  background-position: 30px 35px;
 }
 
 .video__content {
   margin-bottom: 16px;
+  width: 260px;
+  height: 150px;
 }
 
 .video__controls {
@@ -79,6 +85,7 @@
     padding-left: 105px;
     font-size: 20px;
     line-height: 24px;
+    background-position: 30px 25px;
   }
 
   .video__info {
@@ -144,6 +151,7 @@
     padding-bottom: 32px;
     font-size: 20px;
     line-height: 24px;
+    background-position: 74px 35px;
   }
 
   .video__info {

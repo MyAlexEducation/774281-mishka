@@ -45,6 +45,11 @@
   }
 }
 
+.product__photo {
+  width: 260px;
+  height: auto;
+}
+
 .product__properties {
   margin: 0;
   padding-bottom: 18px;
@@ -74,6 +79,11 @@
     line-height: 24px;
     margin-bottom: 4px;
     padding-right: 40px;
+  }
+
+  .product__photo {
+    width: 316px;
+    height: auto;
   }
 
   .product__properties {
