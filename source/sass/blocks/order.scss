@@ -32,6 +32,38 @@
   text-transform: uppercase;
 }
 
+.order__input {
+  width: 100%;
+  font-size: 19px;
+  line-height: 18px;
+  color: $font-gray;
+
+  outline: none;
+  border: none;
+  border-bottom: 2px solid $black;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid $aquamarine;
+  }
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba($font-gray, 0.3);
+  }
+
+  &--tel::placeholder {
+    font-size: 19px;
+    text-transform: uppercase;
+  }
+
+  &--no-display {
+    display: none;
+  }
+}
+
 .order__input--text {
   margin-top: 10px;
   padding-bottom: 12px;
@@ -129,8 +161,20 @@
 }
 
 .order__input--tel {
+  width: 220px;
   padding-bottom: 15px;
   margin-bottom: 30px;
+  padding-right: 40px;
+  background-image: url("../img/icon-phone-opacity.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 24px;
+  background-position: top right;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: url("../img/icon-phone-aquamarine.svg");
+  }
 }
 
 .order__legend--email {
@@ -138,44 +182,24 @@
 }
 
 .order__input--email {
+  width: 220px;
   padding-bottom: 15px;
   margin-bottom: 32px;
-}
-
-.order__legend--add {
-  margin-bottom: 25px;
-}
-
-.order__input {
-  width: 100%;
-  font-size: 19px;
-  line-height: 18px;
-  color: $font-gray;
-
-  outline: none;
-  border: none;
-  border-bottom: 2px solid $black;
+  padding-right: 40px;
+  background-image: url("../img/icon-mail-opacity.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 21px;
+  background-position: top right;
 
   &:hover,
   &:focus,
   &:active {
-    border-bottom: 2px solid $aquamarine;
+    background-image: url("../img/icon-mail-aquamarine.svg");
   }
+}
 
-  &::placeholder {
-    font-size: 17px;
-    line-height: 18px;
-    color: rgba($font-gray, 0.3);
-  }
-
-  &--tel::placeholder {
-    font-size: 19px;
-    text-transform: uppercase;
-  }
-
-  &--no-display {
-    display: none;
-  }
+.order__legend--add {
+  margin-bottom: 25px;
 }
 
 .order__textarea {
@@ -331,7 +355,7 @@
   }
 
   .order__input--tel {
-    width: calc(100% - 15px);
+    width: 443px;
     padding-top: 10px;
     background-color: $background-gray-light;
   }
@@ -345,7 +369,7 @@
   }
 
   .order__input--email {
-    width: calc(100% - 15px);
+    width: 443px;
     background-color: $background-gray-light;
   }
 
@@ -374,7 +398,7 @@
   }
 
   .order__textarea {
-    width: calc(100% - 34px);
+    width: 464px;
   }
 
   .order__legend--color,
@@ -442,11 +466,11 @@
 
   .order__input--tel,
   .order__input--email {
-    width: calc(100% - 190px);
+    width: 645px;
   }
 
   .order__textarea {
-    width: calc(100% - 209px);
+    width: 665px;
   }
 
   .order__label--checkbox {
