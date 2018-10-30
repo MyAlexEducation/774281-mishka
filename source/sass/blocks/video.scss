@@ -47,15 +47,29 @@
 .video__button {
   position: absolute;
   z-index: 1;
-  width: 101px;
-  height: 77px;
+  width: 120px;
+  height: 120px;
   left: 50%;
-  top: -122px;
-  transform: translateX(-50px);
+  top: -152px;
+  transform: translateX(-60px);
   outline: none;
   border: none;
   background-color: transparent;
   background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-size: 101px 77px;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-size: 120px 92px;
+  }
+
+  &:active {
+    background-size: 80px 62px;
+    opacity: 0.3;
+  }
 }
 
 .video__link {
@@ -112,7 +126,7 @@
   }
 
   .video__button {
-    top: -280px;
+    top: 250px;
   }
 }
 
