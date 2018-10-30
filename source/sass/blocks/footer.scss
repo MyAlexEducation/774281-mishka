@@ -8,6 +8,18 @@
   padding-top: 25px;
 }
 
+.footer__link {
+  &:not(&--current):hover,
+  &:not(&--current):focus {
+    fill: $aquamarine-dark-interactive;
+  }
+
+  &:not(&--current):active {
+    fill: $aquamarine-dark-interactive;
+    opacity: 0.3;
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .footer__logo {
     @include visually-hidden;
