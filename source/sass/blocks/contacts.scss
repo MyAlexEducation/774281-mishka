@@ -1,4 +1,5 @@
 .contacts {
+  overflow: hidden;
   padding-top: 42px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
@@ -55,7 +56,7 @@
 .contacts__map {
   display: block;
   width: 322px;
-  height: 457px;
+  height: auto;
   margin: 0 auto;
   margin-bottom: 38px;
 }
@@ -69,6 +70,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     padding-top: 77px;
+    background-size: auto 16px;
   }
 
   .contacts__heading {
@@ -110,7 +112,8 @@
   }
 
   .contacts__map {
-    width: 100%;
+    width: 768px;
+    height: auto;
     margin-bottom: 50px;
   }
 
@@ -128,6 +131,7 @@
     min-height: 460px;
     padding-top: 95px;
     margin-bottom: 105px;
+    background-size: auto 24px;
   }
 
   .contacts__heading {
@@ -173,6 +177,7 @@
   .contacts__map {
     position: absolute;
     width: 525px;
+    height: auto;
     top: 95px;
     left: 50%;
   }

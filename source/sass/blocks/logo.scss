@@ -19,6 +19,11 @@
   }
 }
 
+.logo__image {
+  width: 86px;
+  height: auto;
+}
+
 @media (max-width: $mobile-width-only) {
   .logo__link {
     display: block;
@@ -32,11 +37,15 @@
     position: absolute;
     left: 50%;
     transform: translateX(-334px);
-    top: 20px;
+    top: 0;
     z-index: 1;
     width: 113px;
     height: 46px;
     border: none;
+  }
+
+  .logo__image {
+    width: 113px;
   }
 }
 
@@ -44,7 +53,12 @@
   .logo {
     width: 149px;
     height: 72px;
+    top: -10px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .logo__image {
+    width: 149px;
   }
 }

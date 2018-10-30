@@ -19,14 +19,22 @@
 .copyright__link {
   color: $black;
   text-decoration: none;
+  fill: $aquamarine;
+
+  &:hover,
+  &:focus {
+    fill: $aquamarine-dark-interactive;
+  }
 
   &:active {
+    fill: $aquamarine-dark-interactive;
     opacity: 0.3;
   }
 }
 
 .copyright__logo {
-  margin-bottom: -20px;
+  position: relative;
+  bottom: 8px;
 }
 
 @media (min-width: $tablet-width) {

@@ -9,11 +9,15 @@
 }
 
 .social-navigation__item {
+  fill: #231F20;
 
-}
+  &:hover,
+  &:focus {
+    fill: $aquamarine-dark-interactive;
+  }
 
-.social-navigation__icon {
   &:active {
+    fill: $aquamarine-dark-interactive;
     opacity: 0.3;
   }
 }
@@ -24,7 +28,4 @@
     justify-content: space-around;
     padding-top: 10px;
   }
-}
-
-@media (min-width: $desktop-width) {
 }
