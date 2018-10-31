@@ -13,16 +13,6 @@
   background-repeat: no-repeat;
   background-position: top, center;
   cursor: pointer;
-
-  &--open {
-    background-image: url("../img/icon-menu-close.svg");
-    background-size: 21px auto;
-  }
-
-  &--close {
-    background-image: url("../img/icon-menu-open.svg");
-    background-size: 20px auto;
-  }
 }
 
 .navigation__list {
@@ -104,6 +94,16 @@
 
   .navigation--closed .navigation__list {
     display: none;
+  }
+
+  .navigation--closed .navigation__switch {
+    background-image: url("../img/icon-menu-open.svg");
+    background-size: 20px auto;
+  }
+
+  .navigation--opened .navigation__switch {
+    background-image: url("../img/icon-menu-close.svg");
+    background-size: 21px auto;
   }
 
   .navigation--nojs .navigation__list {
