@@ -109,6 +109,10 @@
   .navigation--nojs .navigation__list {
     display: block;
   }
+
+  .navigation--nojs .navigation__switch {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
