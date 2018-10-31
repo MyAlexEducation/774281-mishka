@@ -53,12 +53,21 @@
   margin-bottom: 36px;
 }
 
+.contacts__map--google {
+  width: 322px;
+  height: 457px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
 .contacts__map {
   display: block;
   width: 322px;
   height: auto;
   margin: 0 auto;
   margin-bottom: 38px;
+  z-index: -1;
 }
 
 .contacts__letter {
@@ -115,6 +124,11 @@
     width: 768px;
     height: auto;
     margin-bottom: 50px;
+  }
+
+  .contacts__map--google {
+    width: 768px;
+    height: 457px;
   }
 
   .contacts__letter {
@@ -180,5 +194,13 @@
     height: auto;
     top: 95px;
     left: 50%;
+  }
+
+  .contacts__map--google {
+    width: 525px;
+    height: 457px;
+    top: 95px;
+    left: 50%;
+    transform: none;
   }
 }
