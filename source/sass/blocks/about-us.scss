@@ -1,8 +1,19 @@
 .about-us {
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-size: auto 6px;
+  position: relative;
   padding-top: 34px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 6px;
+    left: 0;
+    right: 0;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: auto 6px;
+  }
 }
 
 .about-us__container {
@@ -86,7 +97,11 @@
   .about-us {
     padding-top: 68px;
     margin-bottom: 25px;
-    background-size: auto 16px;
+
+    &::before {
+      height: 16px;
+      background-size: auto 16px;
+    }
   }
 
   .about-us__container {
@@ -115,9 +130,13 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    background-size: 24px;
     padding-top: 63px;
     margin-bottom: 30px;
+
+    &::before {
+      height: 24px;
+      background-size: auto 24px;
+    }
   }
 
   .about-us__container {
