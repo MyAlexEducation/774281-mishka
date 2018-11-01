@@ -27,6 +27,7 @@
 }
 
 .heading--gray {
+  position: relative;
   background-color: $background-gray-light;
   background-image: none;
 }
@@ -50,6 +51,19 @@
   .heading--gray {
     background-color: $background-gray-light;
     background-image: none;
+    padding-bottom: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 20px;
+      left: 0;
+      right: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: center;
+      background-size: auto 100%;
+    }
   }
 
   .heading__container {
@@ -95,5 +109,10 @@
   .heading--gray {
     background-color: $background-gray-light;
     background-image: none;
+    padding-bottom: 40px;
+
+    &::after {
+      height: 40px;
+    }
   }
 }
