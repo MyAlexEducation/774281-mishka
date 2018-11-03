@@ -117,14 +117,10 @@
 
 @media (min-width: $tablet-width) {
   .navigation {
-    background-image: linear-gradient(transparent 88px,
-                                      $border-light-gray 88px, $border-light-gray 89px,
-                                      $background-gray 89px, $background-gray 100%);
+    background-image: linear-gradient(transparent 88px, $border-light-gray 88px, $border-light-gray 89px, $background-gray 89px, $background-gray 100%);
 
     &--gray {
-      background-image: linear-gradient(transparent 90px,
-        $border-light-gray 90px, $border-light-gray 91px,
-        $background-gray-light 91px, $background-gray-light 100%);
+      background-image: linear-gradient(transparent 90px, $border-light-gray 90px, $border-light-gray 91px, $background-gray-light 91px, $background-gray-light 100%);
     }
   }
 
