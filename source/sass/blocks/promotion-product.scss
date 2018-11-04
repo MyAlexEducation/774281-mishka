@@ -123,6 +123,7 @@
 
   .promotion-product__cell {
     padding-top: 8px;
+    padding-bottom: 12px;
   }
 
   .promotion-product__price {
@@ -150,7 +151,7 @@
 
   .promotion-product__photo {
     position: absolute;
-    top: 100px;
+    top: 107px;
     right: 0;
     width: 334px;
     height: 404px;
@@ -166,20 +167,20 @@
 
   .promotion-product__heading {
     margin-top: 5px;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
     margin-left: 175px;
     font-size: 53px;
   }
 
   .promotion-product__description {
     width: 290px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     margin-left: 175px;
   }
 
   .promotion-product__properties {
     width: 290px;
-    margin-bottom: 110px;
+    margin-bottom: 105px;
     margin-left: 175px;
   }
 
@@ -192,11 +193,12 @@
   .promotion-product__order {
     width: 290px;
     margin-left: 175px;
+    margin-bottom: 25px;
   }
 
   .promotion-product__event {
     position: absolute;
-    top: 70px;
+    top: 67px;
     left: 30px;
     font-size: 17px;
     line-height: 17px;
