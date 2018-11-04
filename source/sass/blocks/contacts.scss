@@ -67,7 +67,7 @@
   width: 322px;
   height: 457px;
   left: 50%;
-  transform: translateX(-50%);
+  margin-left: -161px;
   position: absolute;
 }
 
@@ -76,12 +76,12 @@
   width: 322px;
   height: auto;
   margin: 0 auto;
-  margin-bottom: 38px;
+  margin-bottom: 42px;
   z-index: -1;
 }
 
 .contacts__letter {
-  width: 260px;
+  width: 256px;
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -143,6 +143,7 @@
   .contacts__map--google {
     width: 768px;
     height: 457px;
+    margin-left: -384px;
   }
 
   .contacts__letter {
@@ -158,7 +159,7 @@
     position: relative;
     min-height: 460px;
     padding-top: 95px;
-    margin-bottom: 105px;
+    margin-bottom: 100px;
 
     &::before {
       height: 24px;
@@ -169,8 +170,8 @@
   .contacts__heading {
     width: $desktop-content-width - 705px;
     margin: 0 auto;
-    margin-bottom: 50px;
-    padding-top: 67px;
+    margin-bottom: 47px;
+    padding-top: 69px;
     padding-right: 530px;
     padding-left: 175px;
     font-size: 53px;
@@ -187,13 +188,13 @@
     padding-right: 530px;
     padding-left: 175px;
     margin: 0 auto;
-    margin-bottom: 45px;
+    margin-bottom: 49px;
   }
 
   .contacts__info {
     width: 300px;
     margin: 0;
-    padding-bottom: 33px;
+    padding-bottom: 30px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -219,6 +220,7 @@
     height: 457px;
     top: 95px;
     left: 50%;
+    margin-left: 0;
     transform: none;
   }
 }

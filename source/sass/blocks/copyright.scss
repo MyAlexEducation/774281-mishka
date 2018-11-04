@@ -6,6 +6,7 @@
 }
 
 .copyright__heading {
+  margin-top: 11px;
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
@@ -35,7 +36,8 @@
 .copyright__logo {
   position: relative;
   bottom: 8px;
-  margin-bottom: -28px;
+  right: -9px;
+  margin-bottom: -30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,10 +50,10 @@
 
 @media (min-width: $desktop-width) {
   .copyright {
-    margin-top: -8px;
+    margin-top: 3px;
   }
 
   .copyright__logo {
-    margin-bottom: -28px;
+    margin-bottom: -30px;
   }
 }

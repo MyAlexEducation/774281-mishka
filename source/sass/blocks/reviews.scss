@@ -146,7 +146,7 @@
   .reviews__author {
     display: block;
     margin-bottom: 5px;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 24px;
   }
 
@@ -176,7 +176,7 @@
     width: $desktop-content-width - 175px;
     margin: 0 auto;
     padding-left: 175px;
-    padding-bottom: 70px;
+    padding-bottom: 67px;
     margin-bottom: 70px;
   }
 
@@ -186,6 +186,7 @@
   }
 
   .reviews__container {
+    padding-top: 72px;
     width: 100%;
   }
 
@@ -194,5 +195,9 @@
     margin-bottom: 5px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .reviews__write {
+    margin-top: 7px;
   }
 }
