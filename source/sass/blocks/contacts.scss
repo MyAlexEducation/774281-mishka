@@ -13,6 +13,7 @@
     background-repeat: repeat-x;
     background-size: auto 6px;
     background-position: center;
+    transform: rotate(180deg);
   }
 }
 
@@ -91,8 +92,8 @@
     padding-top: 77px;
 
     &::before {
-      height: 16px;
-      background-size: auto 16px;
+      height: 15px;
+      background-size: auto 15px;
     }
   }
 
@@ -162,8 +163,10 @@
     margin-bottom: 100px;
 
     &::before {
-      height: 24px;
-      background-size: auto 24px;
+      width: $desktop-content-width;
+      margin: 0 auto;
+      height: 21px;
+      background-size: auto 21px;
     }
   }
 

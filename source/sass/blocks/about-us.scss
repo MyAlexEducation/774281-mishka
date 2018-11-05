@@ -13,6 +13,7 @@
     background-position: center;
     background-repeat: repeat-x;
     background-size: auto 6px;
+    transform: rotate(180deg);
   }
 }
 
@@ -134,8 +135,11 @@
     margin-bottom: 30px;
 
     &::before {
-      height: 24px;
-      background-size: auto 24px;
+      width: $desktop-content-width;
+      height: 21px;
+      margin: 0 auto;
+      background-position: center;
+      background-size: auto 21px;
     }
   }
 

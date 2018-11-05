@@ -5,11 +5,13 @@
   <title>Мишка каталог</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <script>
     // Picture element HTML5 shiv
     document.createElement( "picture" );
   </script>
-  <script src="js/picturefill.js" async></script>
+  <script src="js/picturefill.min.js" async></script>
   <script src="js/svgxuse.min.js" defer></script>
 </head>
 <body>
@@ -97,10 +99,10 @@
               </h1>
               <p class="product__properties">Рост 30 см, вес 200 г</p>
               <span class="product__price">
-                1 200 руб.
+                <span>1 200 руб.</span>
                 <a href="#" class="product__cart">
                   <span class="visually-hidden">В корзину:</span>
-                  <svg width="20.294px" height="18.849px">
+                  <svg width="20" height="19">
                     <use xlink:href="#sprite-icon-cart"></use>
                   </svg>
                 </a>
@@ -151,7 +153,7 @@
             </a>
             <div class="product__info">
               <h1 class="product__heading">
-                <a href="product-description.html" class="product__link">Большая корзинка для игрушек</a>
+                <a href="product-description.html" class="product__link">Большая корзинка для&nbsp;игрушек</a>
               </h1>
               <p class="product__properties">Диаметр 30 см, высота 30 см</p>
               <span class="product__price">
@@ -172,7 +174,7 @@
   <section class="video">
     <div class="video__container">
       <h2 class="video__heading">Процесс производства</h2>
-      <picture>
+      <picture class="video__content">
         <source type="image/webp" media="(min-width: 1150px" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
@@ -200,46 +202,46 @@
         </svg>
       </a>
     </div>
-    <section class="social-navigation">
-      <h2 class="visually-hidden">Мы в соцсетях:</h2>
-      <ul class="social-navigation__list">
-        <li>
-          <a href="#" class="social-navigation__item social-navigation__item--instagram">
-            <span class="visually-hidden">instagram</span>
-            <svg width="21.769px" height="21.334px">
-              <use xlink:href="#sprite-icon-insta"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="social-navigation__item social-navigation__item--facebook">
-            <span class="visually-hidden">facebook</span>
-            <svg width="14.962px" height="27.718px">
-              <use xlink:href="#sprite-icon-fb"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="social-navigation__item social-navigation__item--twitter">
-            <span class="visually-hidden">twitter</span>
-            <svg width="23.494px" height="20.168px">
-              <use xlink:href="#sprite-icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="copyright">
-      <h2 class="copyright__heading">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">Разработано</a>
-      </h2>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-        <span class="visually-hidden">Логотип htmlacademy</span>
-        <svg class="copyright__logo" width="26.943px" height="34.09px">
-          <use xlink:href="#sprite-htmlacademy"></use>
-        </svg>
-      </a>
-    </section>
+      <section class="social-navigation">
+        <h2 class="visually-hidden">Мы в соцсетях:</h2>
+        <ul class="social-navigation__list">
+          <li>
+            <a href="#" class="social-navigation__item social-navigation__item--instagram">
+              <span class="visually-hidden">instagram</span>
+              <svg width="21" height="21">
+                <use xlink:href="#sprite-icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-navigation__item social-navigation__item--facebook">
+              <span class="visually-hidden">facebook</span>
+              <svg width="15" height="28">
+                <use xlink:href="#sprite-icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-navigation__item social-navigation__item--twitter">
+              <span class="visually-hidden">twitter</span>
+              <svg width="30" height="20">
+                <use xlink:href="#sprite-icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <h2 class="copyright__heading">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">Разработано</a>
+        </h2>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <span class="visually-hidden">Логотип htmlacademy</span>
+          <svg class="copyright__logo" width="41" height="41">
+            <use xlink:href="#sprite-htmlacademy"></use>
+          </svg>
+        </a>
+      </section>
   </div>
 </footer>
 <section class="modal-cart">
@@ -265,6 +267,6 @@
     <button type="submit" class="form-size__submit">Добавить</button>
   </form>
 </section>
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>

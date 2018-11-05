@@ -1,4 +1,5 @@
 .catalog__container {
+  padding-top: 31px;
   width: 260px;
   margin: 0 auto;
 }
@@ -10,14 +11,14 @@
 @media (min-width: $tablet-width) {
   .catalog__container {
     width: $tablet-content-width;
-    padding-top: 53px;
+    padding-top: 69px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__container {
     width: $desktop-content-width;
-    padding-top: 150px;
+    padding-top: 112px;
   }
 
   .catalog__list {
