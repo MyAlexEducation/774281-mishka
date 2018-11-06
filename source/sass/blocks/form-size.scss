@@ -20,7 +20,7 @@
 }
 
 .form-size__radio {
-  display: none;
+  @include visually-hidden;
 }
 
 .form-size__label {
@@ -34,7 +34,15 @@
   text-transform: uppercase;
   color: $font-gray;
   text-align: center;
-  border: 2px solid $font-gray;
+  border: 2px solid rgba($font-gray, 0.1);
+}
+
+.form-size__label:hover {
+  border-color: rgba($font-gray, 0.3);
+}
+
+.form-size__radio:focus + .form-size__label {
+  color: $aquamarine;
 }
 
 .form-size__radio:checked + .form-size__label {

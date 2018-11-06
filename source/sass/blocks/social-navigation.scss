@@ -1,11 +1,29 @@
 .social-navigation__list {
   @include list-style-reset;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 142px;
+  width: 141px;
   margin: 0 auto;
   margin-bottom: 18px;
+}
+
+.social-navigation__list li {
+  width: 33%;
+  display: flex;
+}
+
+.social-navigation__list li:nth-child(3n-2) {
+  justify-content: left;
+}
+
+.social-navigation__list li:nth-child(3n-1) {
+  justify-content: center;
+}
+
+.social-navigation__list li:nth-child(3n) {
+  flex-direction: row-reverse;
 }
 
 .social-navigation__item {
@@ -22,10 +40,20 @@
   }
 }
 
+.social-navigation__item--instagram {
+  width: 22px;
+}
+
+.social-navigation__item--facebook {
+  width: 15px;
+}
+
+.social-navigation__item--twitter {
+  width: 23px;
+}
+
 @media (min-width: $tablet-width) {
   .social-navigation__list {
-    width: 183px;
-    justify-content: space-around;
     padding-top: 10px;
   }
 }

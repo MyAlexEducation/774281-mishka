@@ -28,6 +28,7 @@
 }
 
 .order__legend {
+  display: block;
   padding-right: 22px;
   font-size: 17px;
   line-height: 16px;
@@ -64,7 +65,7 @@
   }
 
   &--no-display {
-    display: none;
+    @include visually-hidden;
   }
 }
 
@@ -75,11 +76,8 @@
 }
 
 .order__fieldset--type {
+  padding-top: 27px;
   padding-bottom: 27px;
-}
-
-.order__legend--type {
-  margin-bottom: 27px;
 }
 
 .order__label--radio {
@@ -101,6 +99,17 @@
   }
 }
 
+.order__label--radio:hover::before,
+.order__input--radio:focus + .order__label--radio::before {
+  border-color: $aquamarine;
+}
+
+.order__label--radio:active::before {
+  border-color: $font-gray;
+  opacity: 0.3;
+}
+
+
 .order__input--radio:checked + .order__label--radio::after {
   content: "";
   position: absolute;
@@ -113,12 +122,8 @@
 }
 
 .order__fieldset--color {
+  padding-top: 15px;
   padding-bottom: 20px;
-}
-
-
-.order__legend--color {
-  margin-bottom: 15px;
 }
 
 .order__label--checkbox {
@@ -139,6 +144,16 @@
   }
 }
 
+.order__label--checkbox:hover::before,
+.order__input--checkbox:focus + .order__label--checkbox::before {
+  border-color: $aquamarine;
+}
+
+.order__label--checkbox:active::before {
+  border-color: $font-gray;
+  opacity: 0.3;
+}
+
 .order__input--checkbox:checked + .order__label--checkbox::after {
   content: "";
   position: absolute;
@@ -152,22 +167,22 @@
 }
 
 .order__fieldset--name {
+  padding-top: 30px;
   margin-bottom: 10px;
 }
 
-.order__legend--name {
-  margin-bottom: 30px;
+.order__fieldset--tel {
+  padding-top: 16px;
 }
 
 .order__legend--tel {
   padding-right: 29px;
-  margin-bottom: 18px;
 }
 
 .order__input--tel {
   width: 220px;
   padding-bottom: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   padding-right: 40px;
   background-image: url("../img/icon-phone-opacity.svg");
   background-repeat: no-repeat;
@@ -181,13 +196,13 @@
   }
 }
 
-.order__legend--email {
-  margin-bottom: 15px;
+.order__fieldset--email {
+  padding-top: 17px;
 }
 
 .order__input--email {
   width: 220px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   margin-bottom: 32px;
   padding-right: 40px;
   background-image: url("../img/icon-mail-opacity.svg");
@@ -202,8 +217,8 @@
   }
 }
 
-.order__legend--add {
-  margin-bottom: 25px;
+.order__fieldset--add {
+  padding-top: 25px;
 }
 
 .order__textarea {
@@ -295,6 +310,7 @@
 
   .order__legend {
     position: absolute;
+    width: 110px;
     top: 68px;
     left: 0;
     font-size: 17px;

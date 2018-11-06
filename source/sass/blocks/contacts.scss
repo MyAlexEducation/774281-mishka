@@ -64,14 +64,6 @@
   margin-bottom: 36px;
 }
 
-.contacts__map--google {
-  width: 322px;
-  height: 457px;
-  left: 50%;
-  margin-left: -161px;
-  position: absolute;
-}
-
 .contacts__map {
   display: block;
   width: 322px;
@@ -79,6 +71,16 @@
   margin: 0 auto;
   margin-bottom: 42px;
   z-index: -1;
+}
+
+.contacts__map--google {
+  width: 322px;
+  height: 457px;
+  left: 50%;
+  margin-left: -161px;
+  position: absolute;
+  border: none;
+  z-index: 1;
 }
 
 .contacts__letter {
